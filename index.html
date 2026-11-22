@@ -149,6 +149,14 @@ p.body + p.body{margin-top:1.05em}
 .tag{font-size:13px;padding:5px 11px;border:1px solid var(--rule);border-radius:100px;color:var(--mute)}
 .plate .tag{border-color:var(--rule-dark);color:var(--onink-mute)}
 
+/* ============ earlier work grid ============ */
+.grid2{display:grid;grid-template-columns:1fr;gap:1px;background:var(--rule-dark);border:1px solid var(--rule-dark);margin-top:clamp(28px,3.6vw,42px)}
+@media(min-width:680px){.grid2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.grid2{grid-template-columns:repeat(3,1fr)}}
+.cell{background:var(--ink);padding:24px 22px}
+.cell h4{font-family:"Archivo",sans-serif;font-size:17px;font-weight:700;letter-spacing:-.015em;color:var(--onink)}
+.cell p{margin-top:7px;font-size:14.5px;line-height:1.55;color:#b9b7af}
+
 /* ============ numbers ============ */
 .nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
 @media(min-width:760px){.nums{grid-template-columns:repeat(4,1fr)}}
@@ -243,7 +251,7 @@ footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap
       <div><b>Hyderabad, India</b>On-site, hybrid or remote</div>
       <div><b>Immediate</b>Notice period</div>
       <div><b>Next.js · React · MySQL</b>Core stack</div>
-      <div><b>B.Tech, Computer Science</b>2019–2023</div>
+      <div><b>M.Tech in progress</b>Malla Reddy University, part-time</div>
     </div>
   </div>
 </header>
@@ -351,7 +359,47 @@ footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap
   </div>
 </section>
 
-<section class="plate sec" id="experience">
+<section class="plate sec">
+  <div class="shell">
+    <div class="kicker">Earlier — four years at VSAT Analytics</div>
+    <h2 style="max-width:20ch">Before the products, I was the one who got things shipped.</h2>
+    <p class="body" style="max-width:62ch">
+      VSAT was not only research. It was whatever the business needed next — a site
+      built, a marketplace account run, a shipment chased, a dataset turned into
+      something a client could act on. It is where I learned to own an outcome rather
+      than a task.
+    </p>
+
+    <div class="grid2">
+      <div class="cell">
+        <h4>Botaveil website</h4>
+        <p>Built and maintained the company's site.</p>
+      </div>
+      <div class="cell">
+        <h4>VSAT Analytics website</h4>
+        <p>Built and maintained the firm's own site.</p>
+      </div>
+      <div class="cell">
+        <h4>Amazon &amp; Flipkart storefronts</h4>
+        <p>Ran Botaveil's marketplace presence — listings, catalogue structure and product pages on both platforms.</p>
+      </div>
+      <div class="cell">
+        <h4>Product cataloguing</h4>
+        <p>Built and uploaded product data at volume, and kept it accurate across channels.</p>
+      </div>
+      <div class="cell">
+        <h4>Logistics</h4>
+        <p>Coordinated shipping and fulfilment — the same ground IndiaUnbox now covers in software.</p>
+      </div>
+      <div class="cell">
+        <h4>Client research projects</h4>
+        <p>Market and sector research delivered to clients, across several engagements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plate sec" id="experience" style="padding-top:0">
   <div class="shell">
     <div class="kicker">Experience</div>
     <h2 style="max-width:19ch;margin-bottom:38px">I came to building products through data.</h2>
@@ -386,9 +434,9 @@ footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap
     <div class="role">
       <div class="yr">Sep 2020 — Jul 2024</div>
       <div>
-        <h4>Research intern</h4>
+        <h4>Research &amp; operations</h4>
         <div class="org">VSAT Analytics</div>
-        <p>Research and analysis projects alongside the degree.</p>
+        <p>Client research projects, plus the practical work around them: built the Botaveil and VSAT Analytics websites, ran Botaveil's Amazon and Flipkart storefronts, catalogued and uploaded products, and coordinated logistics. Four years of doing whatever the business needed shipped.</p>
       </div>
     </div>
   </div>
@@ -411,6 +459,21 @@ footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap
         <p>Git<br>Deployment<br>SEO<br>Core Web Vitals</p>
       </div>
     </div>
+    <div class="cols" style="margin-top:clamp(40px,5vw,60px)">
+      <div class="col">
+        <h5>Studying</h5>
+        <p>M.Tech, Malla Reddy University<br>Aug 2026 — present, part-time</p>
+      </div>
+      <div class="col">
+        <h5>Degree</h5>
+        <p>B.Tech, Computer Science<br>Malla Reddy College of Engineering, 2019—2023</p>
+      </div>
+      <div class="col">
+        <h5>Also comfortable with</h5>
+        <p>E-commerce operations<br>Marketplace listings<br>Logistics coordination<br>Market &amp; sector research</p>
+      </div>
+    </div>
+
     <p class="plainly">
       <b>Plainly:</b> both products are JavaScript rather than TypeScript, and I have not
       worked with AWS. I am picking up TypeScript now. I would rather you knew that here
