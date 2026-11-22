@@ -3,765 +3,866 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vineeth Rao Madasu — Full-stack developer, Hyderabad</title>
-<meta name="description" content="Full-stack developer in Hyderabad. Built and shipped IndiaUnbox, a B2B India sourcing platform, and SkilledMBA, an index of 1,000+ AI tools. Next.js, React, MySQL.">
-<meta name="theme-color" content="#f4f3ef">
-<meta property="og:title" content="Vineeth Rao Madasu — Full-stack developer">
-<meta property="og:description" content="Two live products, both built alone. Next.js, React, MySQL.">
-<meta property="og:type" content="profile">
+<title>Vineeth Rao Madasu — Consignment 01</title>
+<meta name="description" content="Full-stack developer in Hyderabad. Builds systems that move things across borders and make them findable. IndiaUnbox and SkilledMBA, both live, both built alone.">
+<meta name="theme-color" content="#ece8e1">
+<meta property="og:title" content="Vineeth Rao Madasu — Full-stack developer, Hyderabad">
+<meta property="og:description" content="I build systems that move things across borders and make them findable.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1a17'/><text x='16' y='23' font-family='Helvetica,sans-serif' font-size='17' font-weight='bold' fill='%23f4f3ef' text-anchor='middle'>V</text></svg>">
-<script>
-  // set theme before first paint — no flash
-  (function(){try{
-    var s=localStorage.getItem('vm-theme');
-    var d=window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.setAttribute('data-theme', s || (d?'dark':'light'));
-  }catch(e){}})();
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2316130f'/><circle cx='9' cy='16' r='3' fill='%23c0392b'/><path d='M12 16h13' stroke='%23ece8e1' stroke-width='2' stroke-dasharray='3 2'/></svg>">
+<script>(function(){try{var s=localStorage.getItem('vm-t');var d=matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.setAttribute('data-theme',s||(d?'dark':'light'));}catch(e){}})();</script>
 <style>
 :root{
-  --page-bg:#f4f3ef; --page-fg:#1a1a17; --page-mute:#74736c; --page-rule:#dcdad2;
-  --page-soft:#33332e; --panel:#eceae3;
-  --plate-bg:#1a1a17; --plate-fg:#edebe4; --plate-mute:#9b9a92; --plate-rule:#3a3a34;
-  --plate-body:#c5c3bb;
-  --live:#3f9b5a;
-  --pad:clamp(20px,5vw,64px); --maxw:1180px;
-  --ease:cubic-bezier(.22,.61,.36,1);
+  --paper:#ece8e1; --ink:#16130f; --mute:#6d675e; --rule:#d2cdc3; --panel:#e3ded5;
+  --stamp:#b3382c; --deep:#1d1a16;
+  --on-deep:#ece8e1; --deep-mute:#8e887d; --deep-rule:#36322b;
+  --pad:clamp(18px,4.5vw,56px); --max:1240px;
+  --e:cubic-bezier(.22,.61,.36,1);
 }
 [data-theme="dark"]{
-  --page-bg:#121210; --page-fg:#ebe9e2; --page-mute:#8e8d85; --page-rule:#2a2a26;
-  --page-soft:#c9c7bf; --panel:#1b1b18;
-  --plate-bg:#1c1c19; --plate-fg:#ebe9e2; --plate-mute:#8e8d85; --plate-rule:#32322d;
-  --plate-body:#bfbdb5;
+  --paper:#111 ; --ink:#ece8e1; --mute:#8b857b; --rule:#2a2621; --panel:#1a1713;
+  --deep:#17140f; --on-deep:#ece8e1; --deep-mute:#8b857b; --deep-rule:#2c2822;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{
-  background:var(--page-bg);color:var(--page-fg);
-  font-family:"DM Sans",ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
-  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
-  transition:background .35s var(--ease),color .35s var(--ease);
-}
+body{background:var(--paper);color:var(--ink);font-family:"DM Sans",ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s var(--e),color .4s var(--e)}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
-.shell{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:3px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button,select{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+:focus-visible{outline:2px solid var(--stamp);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
 
-/* ---------- scroll progress ---------- */
-#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--page-fg);z-index:70;transition:width .08s linear}
+/* ======== bar ======== */
+.bar{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:56px}
+.mark{display:flex;align-items:center;gap:10px;font-family:"Archivo",sans-serif;font-weight:700;font-size:14px;letter-spacing:-.01em}
+.mark i{width:9px;height:9px;border-radius:50%;background:var(--stamp);flex:none}
+.barr{display:flex;align-items:center;gap:7px}
+.gbtn{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;letter-spacing:.02em;border:1px solid var(--rule);border-radius:3px;padding:7px 11px;color:var(--mute);transition:.2s}
+.gbtn:hover{color:var(--ink);border-color:var(--ink)}
+.gbtn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+[data-theme="light"] .mn{display:block}[data-theme="light"] .sn{display:none}
+[data-theme="dark"] .mn{display:none}[data-theme="dark"] .sn{display:block}
+kbd{font-family:"IBM Plex Mono",monospace;font-size:10.5px;border:1px solid var(--rule);border-radius:2px;padding:1px 4px}
+@media(max-width:700px){.gbtn .lbl{display:none}}
 
-/* ---------- top bar ---------- */
-.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--page-bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--page-rule)}
-.topbar .shell{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
-.sig{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
-.topnav{display:flex;align-items:center;gap:6px}
-.topnav a{text-decoration:none;font-size:14.5px;color:var(--page-mute);padding:6px 11px;border-radius:7px;transition:color .2s,background .2s}
-.topnav a:hover{color:var(--page-fg)}
-.topnav a[aria-current="true"]{color:var(--page-fg);background:var(--panel)}
-.tools{display:flex;align-items:center;gap:8px;margin-left:6px}
-.kbtn{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--page-mute);border:1px solid var(--page-rule);border-radius:8px;padding:6px 10px;transition:border-color .2s,color .2s}
-.kbtn:hover{color:var(--page-fg);border-color:var(--page-fg)}
-kbd{font-family:inherit;font-size:11.5px;border:1px solid var(--page-rule);border-radius:4px;padding:1px 5px;background:var(--panel)}
-.icbtn{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--page-rule);border-radius:8px;color:var(--page-mute);transition:color .2s,border-color .2s}
-.icbtn:hover{color:var(--page-fg);border-color:var(--page-fg)}
-.icbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-[data-theme="light"] .moon{display:block}[data-theme="light"] .sun{display:none}
-[data-theme="dark"] .moon{display:none}[data-theme="dark"] .sun{display:block}
-.status{display:inline-flex;align-items:center;gap:7px;font-size:14px}
-.pulse{width:7px;height:7px;border-radius:50%;background:var(--live);flex:none;animation:ping 2.6s ease-out infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(63,155,90,.5)}70%{box-shadow:0 0 0 9px rgba(63,155,90,0)}100%{box-shadow:0 0 0 0 rgba(63,155,90,0)}}
-@media(max-width:900px){.topnav a{display:none}.kbtn span.lbl{display:none}}
-@media(max-width:560px){.status{display:none}}
+/* ======== routing header ======== */
+.route{padding:clamp(28px,4vw,44px) 0 0}
+.rgrid{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+@media(min-width:800px){.rgrid{grid-template-columns:auto 1fr auto;gap:26px}}
+.node{min-width:0}
+.node .lab{font-size:10.5px;letter-spacing:.18em;color:var(--mute);margin-bottom:7px}
+.node .val{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(17px,2.1vw,22px);letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+.node .sub{font-size:11.5px;color:var(--mute);margin-top:5px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--stamp);flex:none}
+.dot.hollow{background:none;border:2px solid var(--ink)}
+.line{position:relative;height:40px}
+.line svg{width:100%;height:100%;overflow:visible}
+.line path{fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:5 5}
+.line .moving{stroke:var(--stamp);stroke-dasharray:0;stroke-width:2;animation:draw 2.4s var(--e) forwards}
+@keyframes draw{from{stroke-dashoffset:var(--len);stroke-dasharray:var(--len)}to{stroke-dashoffset:0;stroke-dasharray:var(--len)}}
+.pkg{fill:var(--stamp)}
+.destsel{position:relative;display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:3px;padding:8px 12px;cursor:pointer;transition:.2s}
+.destsel:hover{background:var(--ink);color:var(--paper)}
+.destsel select{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.destsel .cv{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(16px,2vw,21px);letter-spacing:-.02em}
+.destsel .ar{font-size:11px;opacity:.6}
 
-/* ---------- hero ---------- */
-.hero{padding:clamp(54px,9vw,112px) 0 clamp(40px,6vw,70px)}
-.hero h1{font-family:"Archivo Black","Archivo",Impact,sans-serif;font-weight:400;font-size:clamp(38px,6.5vw,86px);line-height:.98;letter-spacing:-.035em}
-.hero h1 span{display:block}
-.hero h1 .l2{color:var(--page-mute)}
-.intro{margin-top:clamp(22px,3.2vw,36px);font-size:clamp(17px,1.6vw,20.5px);line-height:1.58;max-width:60ch;color:var(--page-soft)}
-.intro b{font-weight:700;color:var(--page-fg)}
-.facts{display:flex;flex-wrap:wrap;gap:0 34px;margin-top:clamp(26px,3.6vw,42px);padding-top:22px;border-top:1px solid var(--page-rule);font-size:14.5px;color:var(--page-mute)}
-.facts div{padding:5px 0}
-.facts b{display:block;color:var(--page-fg);font-weight:500;font-size:15.5px}
-.rise{opacity:0;transform:translateY(14px);animation:rise .8s var(--ease) forwards}
-.d1{animation-delay:.04s}.d2{animation-delay:.16s}.d3{animation-delay:.28s}
-@keyframes rise{to{opacity:1;transform:none}}
+/* ======== hero ======== */
+.hero{padding:clamp(40px,7vw,86px) 0 clamp(34px,5vw,62px)}
+.hero h1{font-family:"Archivo Black",Impact,sans-serif;font-weight:400;font-size:clamp(34px,7vw,92px);line-height:.94;letter-spacing:-.04em;text-transform:uppercase;max-width:17ch}
+.hero h1 em{font-style:normal;color:var(--stamp)}
+:lang(ja) .hero h1,:lang(hi) .hero h1{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(26px,4.4vw,56px);line-height:1.3;letter-spacing:-.01em;max-width:24ch}
+:lang(ja) .cname,:lang(hi) .cname{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:-.02em}
+:lang(ja) .mailbig,:lang(hi) .mailbig{font-family:"Archivo",sans-serif;font-weight:700}
+.hero .sub{margin-top:clamp(20px,2.6vw,30px);font-size:clamp(16px,1.5vw,19px);max-width:56ch;color:var(--mute)}
+.hero .sub b{color:var(--ink);font-weight:500}
+.strip{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(26px,3.4vw,40px);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.cellx{flex:1 1 170px;padding:14px 16px 14px 0;border-right:1px solid var(--rule)}
+.cellx:last-child{border-right:0}
+.cellx .k{font-size:10.5px;letter-spacing:.14em;color:var(--mute)}
+.cellx .v{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;margin-top:4px;letter-spacing:-.01em}
 
-/* ---------- sections ---------- */
-.sec{padding:clamp(60px,8vw,112px) 0}
-.plate{background:var(--plate-bg);color:var(--plate-fg)}
-.kicker{font-size:14px;color:var(--page-mute);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.kicker::after{content:"";height:1px;flex:1;background:var(--page-rule)}
-.plate .kicker{color:var(--plate-mute)}
-.plate .kicker::after{background:var(--plate-rule)}
-h2{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(28px,4.2vw,50px);line-height:1.05;letter-spacing:-.028em}
-p.body{margin-top:18px;max-width:56ch;color:var(--page-soft)}
-.plate p.body{color:var(--plate-body)}
-p.body+p.body{margin-top:1.05em}
-p.body b{color:var(--page-fg)} .plate p.body b{color:var(--plate-fg)}
+/* ======== sections ======== */
+.sec{padding:clamp(52px,7vw,96px) 0;border-top:1px solid var(--rule)}
+.deep{background:var(--deep);color:var(--on-deep);border-top-color:var(--deep-rule)}
+.deep .mute,.deep .k,.deep .lab{color:var(--deep-mute)}
+.shead{display:flex;align-items:baseline;gap:16px;margin-bottom:clamp(22px,3vw,34px)}
+.snum{font-size:11px;letter-spacing:.14em;color:var(--stamp);flex:none}
+.sttl{font-size:11px;letter-spacing:.18em;color:var(--mute)}
+.deep .sttl{color:var(--deep-mute)}
+.shead::after{content:"";flex:1;height:1px;background:var(--rule)}
+.deep .shead::after{background:var(--deep-rule)}
+h2{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(25px,3.6vw,42px);line-height:1.08;letter-spacing:-.03em}
+p.bd{margin-top:16px;max-width:56ch;color:var(--mute);font-size:16px}
+.deep p.bd{color:#b8b2a8}
+p.bd b{color:var(--ink);font-weight:500}
+.deep p.bd b{color:var(--on-deep)}
+p.bd+p.bd{margin-top:1em}
 
-/* ---------- finder ---------- */
-.finder{margin-top:clamp(26px,3.4vw,40px)}
-.fsearch{position:relative;max-width:460px}
-.fsearch svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;fill:none;stroke:var(--plate-mute);stroke-width:1.8}
-.fsearch input{
-  width:100%;background:transparent;border:1px solid var(--plate-rule);border-radius:10px;
-  padding:13px 14px 13px 42px;color:var(--plate-fg);font-size:16px;
-  transition:border-color .2s;
-}
-.fsearch input::placeholder{color:var(--plate-mute)}
-.fsearch input:focus{outline:none;border-color:var(--plate-fg)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.chip{font-size:13.5px;padding:7px 14px;border:1px solid var(--plate-rule);border-radius:100px;color:var(--plate-mute);transition:all .2s}
-.chip:hover{color:var(--plate-fg);border-color:var(--plate-fg)}
-.chip[aria-pressed="true"]{background:var(--plate-fg);color:var(--plate-bg);border-color:var(--plate-fg)}
-.fcount{margin-top:18px;font-size:13.5px;color:var(--plate-mute);font-variant-numeric:tabular-nums}
-.fgrid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--plate-rule);border:1px solid var(--plate-rule);margin-top:14px}
-@media(min-width:660px){.fgrid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.fgrid{grid-template-columns:repeat(3,1fr)}}
-.fitem{background:var(--plate-bg);padding:20px 19px;animation:pop .32s var(--ease)}
-@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.fitem h4{font-family:"Archivo",sans-serif;font-size:16px;font-weight:700;letter-spacing:-.012em}
-.fitem p{margin-top:6px;font-size:14px;line-height:1.5;color:var(--plate-body)}
-.fitem .cat{display:inline-block;margin-top:10px;font-size:11.5px;color:var(--plate-mute);border:1px solid var(--plate-rule);border-radius:4px;padding:2px 7px}
-.fempty{grid-column:1/-1;background:var(--plate-bg);padding:34px 19px;text-align:center;color:var(--plate-mute);font-size:14.5px}
+/* ======== consignment ======== */
+.cons{display:grid;grid-template-columns:1fr;gap:clamp(24px,3vw,42px)}
+@media(min-width:900px){.cons{grid-template-columns:1fr 1fr;align-items:start}}
+.shot{border:1px solid var(--deep-rule);border-radius:2px;overflow:hidden;display:block;position:relative;transition:transform .5s var(--e)}
+.shot:hover{transform:translateY(-5px)}
+.shot .tagbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 11px;background:var(--deep);border-bottom:1px solid var(--deep-rule);font-size:10.5px;letter-spacing:.1em;color:var(--deep-mute)}
+.live{display:inline-flex;align-items:center;gap:6px;color:#5fb37a}
+.live i{width:6px;height:6px;border-radius:50%;background:#5fb37a;display:block;animation:bl 2.2s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+.cname{font-family:"Archivo Black",Impact,sans-serif;font-size:clamp(26px,3.6vw,44px);letter-spacing:-.035em;text-transform:uppercase;line-height:1}
+.cwhat{margin-top:9px;font-size:15px;color:var(--deep-mute)}
+.spec{list-style:none;margin-top:24px;border-top:1px solid var(--deep-rule)}
+.spec li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--deep-rule);font-size:14.5px}
+.spec li>span:first-child{font-size:10.5px;letter-spacing:.12em;color:var(--deep-mute);padding-top:3px}
+@media(max-width:520px){.spec li{grid-template-columns:1fr;gap:3px}}
+.open{display:inline-flex;align-items:center;gap:9px;margin-top:24px;font-size:14.5px;font-weight:500;text-decoration:none;border-bottom:2px solid var(--stamp);padding-bottom:3px}
+.open:hover{color:var(--stamp)}
+.chiprow{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.ch{font-size:11.5px;letter-spacing:.04em;padding:4px 9px;border:1px solid var(--deep-rule);color:var(--deep-mute);border-radius:2px}
 
-/* ---------- projects ---------- */
-.phead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(20px,2.8vw,32px)}
-.pbody{display:grid;grid-template-columns:1fr;gap:clamp(26px,3.6vw,52px);margin-top:clamp(26px,3.4vw,44px)}
-@media(min-width:880px){.pbody{grid-template-columns:1.04fr .96fr;align-items:start}}
-.frame{border-radius:11px;overflow:hidden;background:#fff;display:block;box-shadow:0 26px 60px -24px rgba(0,0,0,.55);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
-.frame:hover{transform:translateY(-4px);box-shadow:0 36px 72px -26px rgba(0,0,0,.62)}
-.chrome{display:flex;align-items:center;gap:7px;padding:9px 13px;background:#e9e7e1;border-bottom:1px solid #d7d4cc}
-.chrome i{width:9px;height:9px;border-radius:50%;background:#c6c3ba;display:block;flex:none}
-.chrome span{margin-left:7px;font-size:11.5px;color:#7b786f;background:#f6f5f1;border-radius:4px;padding:3px 10px;white-space:nowrap}
-h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(24px,3vw,36px);letter-spacing:-.025em;line-height:1.1}
-.what{margin-top:7px;font-size:15.5px;color:var(--page-mute)}
-.plate .what{color:var(--plate-mute)}
-.specs{list-style:none;border-top:1px solid var(--page-rule)}
-.plate .specs{border-top-color:var(--plate-rule)}
-.specs li{display:grid;grid-template-columns:142px 1fr;gap:16px;padding:11px 0;border-bottom:1px solid var(--page-rule);font-size:15px}
-.plate .specs li{border-bottom-color:var(--plate-rule)}
-.specs li>span:first-child{color:var(--page-mute)}
-.plate .specs li>span:first-child{color:var(--plate-mute)}
-@media(max-width:560px){.specs li{grid-template-columns:1fr;gap:2px}}
-.visit{display:inline-block;font-size:15.5px;font-weight:500;text-decoration:none;padding-bottom:3px;border-bottom:2px solid currentColor;transition:opacity .2s}
-.visit:hover{opacity:.6}
-.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
-.tag{font-size:13px;padding:5px 11px;border:1px solid var(--page-rule);border-radius:100px;color:var(--page-mute)}
-.plate .tag{border-color:var(--plate-rule);color:var(--plate-mute)}
+/* ======== finder ======== */
+.fbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.fin{position:relative;flex:1 1 260px;max-width:380px}
+.fin input{width:100%;background:none;border:1px solid var(--rule);border-radius:2px;padding:11px 12px 11px 36px;font-size:15px;color:var(--ink)}
+.fin input:focus{outline:none;border-color:var(--ink)}
+.fin svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:15px;height:15px;fill:none;stroke:var(--mute);stroke-width:1.8}
+.fchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.fc{font-size:12px;letter-spacing:.05em;padding:6px 11px;border:1px solid var(--rule);border-radius:2px;color:var(--mute);transition:.18s}
+.fc:hover{color:var(--ink);border-color:var(--ink)}
+.fc[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.fn{margin-top:16px;font-size:12px;letter-spacing:.06em;color:var(--mute)}
+.fg{display:grid;grid-template-columns:1fr;gap:0;margin-top:10px;border-top:1px solid var(--rule)}
+.fr{display:grid;grid-template-columns:1fr;gap:3px;padding:15px 0;border-bottom:1px solid var(--rule);animation:fade .3s var(--e)}
+@media(min-width:760px){.fr{grid-template-columns:118px 1fr 230px;gap:22px;align-items:baseline}}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.fr .fcat{font-size:10.5px;letter-spacing:.12em;color:var(--stamp)}
+.fr .ft{font-family:"Archivo",sans-serif;font-weight:700;font-size:16px;letter-spacing:-.015em}
+.fr .fd{font-size:14px;color:var(--mute);line-height:1.5}
+.fnone{padding:30px 0;color:var(--mute);font-size:14.5px}
 
-/* ---------- numbers ---------- */
-.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--page-rule);border:1px solid var(--page-rule)}
-@media(min-width:760px){.nums{grid-template-columns:repeat(4,1fr)}}
-.num{background:var(--page-bg);padding:26px 22px}
-.num b{display:block;font-family:"Archivo Black","Archivo",sans-serif;font-weight:400;font-size:clamp(30px,4.2vw,46px);letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
-.num span{display:block;margin-top:9px;font-size:14px;color:var(--page-mute);line-height:1.4}
+/* ======== record ======== */
+.rec{border-top:1px solid var(--deep-rule)}
+.rr{display:grid;grid-template-columns:1fr;gap:4px;padding:20px 0;border-bottom:1px solid var(--deep-rule)}
+@media(min-width:800px){.rr{grid-template-columns:150px 1fr;gap:28px}}
+.rr .rw{font-size:12.5px;color:var(--deep-mute);letter-spacing:.04em}
+.rr h4{font-family:"Archivo",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.015em}
+.rr .ro{font-size:14px;color:var(--deep-mute);margin-top:2px}
+.rr p{margin-top:8px;font-size:14.5px;color:#b8b2a8;max-width:58ch}
 
-/* ---------- grid cells ---------- */
-.grid2{display:grid;grid-template-columns:1fr;gap:1px;background:var(--plate-rule);border:1px solid var(--plate-rule);margin-top:clamp(26px,3.4vw,40px)}
-@media(min-width:680px){.grid2{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.grid2{grid-template-columns:repeat(3,1fr)}}
-.cell{background:var(--plate-bg);padding:24px 22px}
-.cell h4{font-family:"Archivo",sans-serif;font-size:17px;font-weight:700;letter-spacing:-.015em}
-.cell p{margin-top:7px;font-size:14.5px;line-height:1.55;color:var(--plate-body)}
+/* ======== cols ======== */
+.c3{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:700px){.c3{grid-template-columns:repeat(3,1fr);gap:34px}}
+.c3 h5{font-size:10.5px;letter-spacing:.14em;color:var(--deep-mute);margin-bottom:10px}
+.c3 p{font-size:15px;line-height:1.8}
+.note{margin-top:34px;padding:18px 20px;border:1px solid var(--deep-rule);border-left:3px solid var(--stamp);max-width:68ch;font-size:14.5px;color:#b8b2a8}
+.note b{color:var(--on-deep);font-weight:500}
 
-/* ---------- experience ---------- */
-.role{display:grid;grid-template-columns:1fr;gap:3px;padding:24px 0;border-bottom:1px solid var(--plate-rule)}
-@media(min-width:760px){.role{grid-template-columns:200px 1fr;gap:30px;align-items:baseline}}
-.role:last-of-type{border-bottom:0}
-.role .yr{font-size:14.5px;color:var(--plate-mute);font-variant-numeric:tabular-nums}
-.role h4{font-family:"Archivo",sans-serif;font-size:19px;font-weight:700;letter-spacing:-.015em}
-.role .org{font-size:15px;color:var(--plate-mute);margin-top:2px}
-.role p{margin-top:9px;font-size:15.5px;color:var(--plate-body);max-width:58ch}
+/* ======== profiles ======== */
+.pf{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule);margin-top:4px}
+@media(min-width:720px){.pf{grid-template-columns:1fr 1fr}}
+.pfa{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 0;border-bottom:1px solid var(--rule);text-decoration:none;transition:padding .25s var(--e)}
+.pfa:hover{padding-left:10px}
+@media(min-width:720px){.pfa{padding-right:26px}}
+.pfa .pn{font-family:"Archivo",sans-serif;font-weight:700;font-size:16px}
+.pfa .ph{font-size:12.5px;color:var(--mute);margin-top:2px;word-break:break-all}
+.pfa .px{color:var(--stamp);font-size:15px}
 
-/* ---------- cols ---------- */
-.cols{display:grid;grid-template-columns:1fr;gap:30px}
-@media(min-width:720px){.cols{grid-template-columns:repeat(3,1fr);gap:40px}}
-.col h5{font-size:14px;font-weight:500;color:var(--plate-mute);margin-bottom:11px}
-.col p{font-size:16px;line-height:1.85}
-.plainly{margin-top:clamp(32px,4vw,46px);padding:22px 24px;border:1px solid var(--plate-rule);border-radius:9px;max-width:70ch;font-size:15.5px;color:var(--plate-body)}
-.plainly b{color:var(--plate-fg);font-weight:500}
+/* ======== contact ======== */
+.mailbig{display:inline-block;margin-top:22px;font-family:"Archivo Black",Impact,sans-serif;font-size:clamp(20px,3.6vw,40px);letter-spacing:-.035em;text-decoration:none;border-bottom:3px solid var(--stamp);padding-bottom:3px;word-break:break-word}
+.mailbig:hover{color:var(--stamp)}
+.cpy{margin-left:12px;font-size:12.5px;border:1px solid var(--rule);border-radius:2px;padding:6px 11px;color:var(--mute);vertical-align:middle}
+.cpy:hover{color:var(--ink);border-color:var(--ink)}
+.foot{padding:22px 0 36px;border-top:1px solid var(--rule);font-size:12px;color:var(--mute);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-/* ---------- profiles ---------- */
-.plist{display:grid;grid-template-columns:1fr;gap:1px;background:var(--page-rule);border:1px solid var(--page-rule);margin-top:clamp(26px,3.4vw,38px)}
-@media(min-width:680px){.plist{grid-template-columns:repeat(2,1fr)}}
-.prow{background:var(--page-bg);padding:20px 22px;text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:14px;transition:background .2s}
-.prow:hover{background:var(--panel)}
-.prow .nm{font-family:"Archivo",sans-serif;font-weight:700;font-size:16px}
-.prow .hd{font-size:13.5px;color:var(--page-mute);margin-top:3px;word-break:break-all}
-.prow .go{font-size:20px;color:var(--page-mute);flex:none;transition:transform .25s var(--ease)}
-.prow:hover .go{transform:translateX(4px)}
-
-/* ---------- contact ---------- */
-.lead{font-size:clamp(17px,1.6vw,19px);color:var(--page-soft);max-width:48ch;margin-top:16px}
-.mailrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:28px}
-.mailto{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:-.03em;font-size:clamp(23px,4.2vw,44px);line-height:1.1;text-decoration:none;border-bottom:3px solid var(--page-fg);padding-bottom:4px;word-break:break-word;transition:opacity .2s}
-.mailto:hover{opacity:.6}
-.copy{font-size:13.5px;color:var(--page-mute);border:1px solid var(--page-rule);border-radius:8px;padding:7px 13px;transition:all .2s}
-.copy:hover{color:var(--page-fg);border-color:var(--page-fg)}
-footer{border-top:1px solid var(--page-rule);padding:26px 0 40px;font-size:13.5px;color:var(--page-mute)}
-footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-
-/* ---------- command palette ---------- */
-.pal{position:fixed;inset:0;z-index:90;display:none;padding:12vh 20px 20px;justify-content:center;align-items:flex-start}
+/* ======== palette ======== */
+.pal{position:fixed;inset:0;z-index:90;display:none;padding:11vh 18px 18px;justify-content:center;align-items:flex-start}
 .pal[open]{display:flex}
-.palbg{position:absolute;inset:0;background:rgba(10,10,9,.5);backdrop-filter:blur(4px);animation:fade .2s ease}
-@keyframes fade{from{opacity:0}to{opacity:1}}
-.palbox{position:relative;width:100%;max-width:580px;background:var(--page-bg);border:1px solid var(--page-rule);border-radius:14px;box-shadow:0 30px 80px -20px rgba(0,0,0,.5);overflow:hidden;animation:palin .22s var(--ease)}
-@keyframes palin{from{opacity:0;transform:translateY(-10px) scale(.985)}to{opacity:1;transform:none}}
-.palin{display:flex;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid var(--page-rule)}
-.palin svg{width:17px;height:17px;fill:none;stroke:var(--page-mute);stroke-width:1.8;flex:none}
-.palin input{flex:1;background:none;border:none;outline:none;font-size:16.5px;color:var(--page-fg)}
-.palin input::placeholder{color:var(--page-mute)}
-.palres{max-height:min(52vh,420px);overflow-y:auto;padding:8px}
-.palgrp{font-size:11.5px;color:var(--page-mute);padding:10px 12px 6px;letter-spacing:.04em}
-.palit{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:10px 12px;border-radius:9px;text-decoration:none;font-size:15px}
-.palit[data-sel="1"]{background:var(--panel)}
-.palit .t{flex:1;min-width:0}
-.palit .s{display:block;font-size:12.5px;color:var(--page-mute);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.palit .ic{width:26px;height:26px;border-radius:6px;border:1px solid var(--page-rule);display:grid;place-items:center;font-size:12px;color:var(--page-mute);flex:none}
-.palnone{padding:28px 14px;text-align:center;color:var(--page-mute);font-size:14.5px}
-.palfoot{display:flex;gap:16px;padding:11px 18px;border-top:1px solid var(--page-rule);font-size:12px;color:var(--page-mute)}
-.palfoot span{display:inline-flex;align-items:center;gap:6px}
-
-.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,16px);background:var(--plate-bg);color:var(--plate-fg);padding:11px 20px;border-radius:100px;font-size:14px;opacity:0;pointer-events:none;transition:all .3s var(--ease);z-index:95}
+.pbg{position:absolute;inset:0;background:rgba(8,7,6,.55);backdrop-filter:blur(3px)}
+.pbox{position:relative;width:100%;max-width:560px;background:var(--paper);border:1px solid var(--ink);border-radius:3px;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);overflow:hidden;animation:pin .2s var(--e)}
+@keyframes pin{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.pq{display:flex;align-items:center;gap:11px;padding:15px 17px;border-bottom:1px solid var(--rule)}
+.pq svg{width:15px;height:15px;fill:none;stroke:var(--mute);stroke-width:1.8;flex:none}
+.pq input{flex:1;background:none;border:none;outline:none;font-size:16px;color:var(--ink)}
+.pr{max-height:min(50vh,400px);overflow-y:auto;padding:6px}
+.pgp{font-size:10px;letter-spacing:.14em;color:var(--mute);padding:9px 11px 5px}
+.pi{display:flex;align-items:center;gap:11px;width:100%;text-align:left;padding:9px 11px;border-radius:2px;text-decoration:none;font-size:14.5px}
+.pi[data-s="1"]{background:var(--ink);color:var(--paper)}
+.pi[data-s="1"] .ps{color:rgba(236,232,225,.65)}
+.pi .pt{flex:1;min-width:0}
+.pi .ps{display:block;font-size:12px;color:var(--mute);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pi .pic{width:22px;text-align:center;color:var(--stamp);flex:none;font-size:12px}
+.pi[data-s="1"] .pic{color:var(--paper)}
+.pft{display:flex;gap:14px;padding:10px 17px;border-top:1px solid var(--rule);font-size:11px;color:var(--mute)}
+.pnone{padding:26px 12px;text-align:center;color:var(--mute);font-size:14px}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:2px;font-size:13.5px;opacity:0;pointer-events:none;transition:.3s var(--e);z-index:95}
 .toast[data-on="1"]{opacity:1;transform:translate(-50%,0)}
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--stamp);z-index:70}
 
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .rise{opacity:1;transform:none;animation:none}
-  .pulse{animation:none}
-  .fitem,.palbox,.palbg{animation:none}
-  *{transition-duration:.01ms!important}
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 <div id="prog"></div>
 
-<div class="topbar">
-  <div class="shell">
-    <div class="sig">Vineeth Rao Madasu</div>
-    <nav class="topnav" id="nav">
-      <a href="#work">Work</a>
-      <a href="#build">What I build</a>
-      <a href="#experience">Experience</a>
-      <a href="#profiles">Profiles</a>
-      <a href="#contact">Contact</a>
-      <div class="tools">
-        <button class="kbtn" id="openPal" aria-label="Open command palette">
-          <span class="lbl">Search</span><kbd>⌘K</kbd>
-        </button>
-        <button class="icbtn" id="theme" aria-label="Toggle colour theme">
-          <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        </button>
-        <span class="status"><i class="pulse"></i>Available</span>
-      </div>
-    </nav>
+<div class="bar">
+  <div class="wrap">
+    <div class="mark"><i></i>VINEETH RAO MADASU</div>
+    <div class="barr">
+      <button class="gbtn" id="opal" aria-label="Open command palette"><span class="lbl" data-i="ui.search">Search</span><kbd>⌘K</kbd></button>
+      <button class="gbtn" id="thm" aria-label="Toggle theme">
+        <svg class="mn" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/></svg>
+      </button>
+    </div>
   </div>
 </div>
 
+<!-- ============ ROUTING ============ -->
+<section class="route">
+  <div class="wrap">
+    <div class="rgrid">
+      <div class="node">
+        <div class="lab mono" data-i="route.origin">ORIGIN</div>
+        <div class="val"><i class="dot"></i>Hyderabad, IN</div>
+        <div class="sub mono" id="istime">17.38°N 78.49°E</div>
+      </div>
+      <div class="line" aria-hidden="true">
+        <svg viewBox="0 0 400 40" preserveAspectRatio="none">
+          <path d="M0,20 Q200,-8 400,20"/>
+          <path id="arc" class="moving" d="M0,20 Q200,-8 400,20"/>
+          <circle class="pkg" r="4"><animateMotion id="am" dur="2.4s" fill="freeze"
+            path="M0,20 Q200,-8 400,20"/></circle>
+        </svg>
+      </div>
+      <div class="node" style="text-align:left">
+        <div class="lab mono" data-i="route.dest">DESTINATION</div>
+        <div class="destsel">
+          <i class="dot hollow"></i>
+          <span class="cv" id="destName">United States</span>
+          <span class="ar">▾</span>
+          <label class="sr" for="dest" data-i="route.pick">Choose destination market and language</label>
+          <select id="dest"></select>
+        </div>
+        <div class="sub mono" id="destTime">—</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO ============ -->
 <header class="hero">
-  <div class="shell">
-    <h1 class="rise d1"><span>Thousands of options.</span><span class="l2">One right answer.</span></h1>
-    <p class="intro rise d2">
-      I build the systems that get people from the first to the second. Two of them are
-      live and I built both alone: a B2B platform that moves goods from Indian factories
-      to warehouses abroad, and an index of <b>1,000+ AI tools</b> mapped across 22 MBA
-      subjects.
-    </p>
-    <div class="facts rise d3">
-      <div><b>Hyderabad, India</b>On-site, hybrid or remote</div>
-      <div><b>Immediate</b>Notice period</div>
-      <div><b>Next.js · React · MySQL</b>Core stack</div>
-      <div><b>M.Tech in progress</b>Malla Reddy University, part-time</div>
+  <div class="wrap">
+    <h1 data-i="hero.h">I build systems that move things <em>across borders</em> and make them findable.</h1>
+    <p class="sub" data-i="hero.sub">Two are live and I built both alone: a B2B platform moving goods from Indian factories to warehouses abroad, and an index of 1,000+ AI tools across 22 MBA subjects.</p>
+    <div class="strip">
+      <div class="cellx"><div class="k mono" data-i="s.base">BASED</div><div class="v">Hyderabad, India</div></div>
+      <div class="cellx"><div class="k mono" data-i="s.avail">AVAILABILITY</div><div class="v" data-i="s.availv">Immediate</div></div>
+      <div class="cellx"><div class="k mono" data-i="s.stack">STACK</div><div class="v">Next.js · React · MySQL</div></div>
+      <div class="cellx"><div class="k mono" data-i="s.mode">MODE</div><div class="v" data-i="s.modev">On-site · Hybrid · Remote</div></div>
     </div>
   </div>
 </header>
 
-<!-- ============ live finder ============ -->
-<section class="plate sec" id="build">
-  <div class="shell">
-    <div class="kicker">What I build — filter it</div>
-    <h2 style="max-width:20ch">Search this the way you'd search a catalogue.</h2>
-    <p class="body" style="max-width:60ch">
-      Both my products do one thing: take a sprawl of options and make the right one
-      findable. This index works the same way — type, or pick a category, and it
-      narrows live. Hiring for operations rather than engineering? Filter for it.
-    </p>
+<!-- ============ 01 ============ -->
+<section class="sec deep" id="work">
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">01</span><span class="sttl mono" data-i="sec.cons">CONSIGNMENT — LIVE PRODUCT</span></div>
+    <div class="cons">
+      <div>
+        <a class="shot" href="https://indiaunbox.com" target="_blank" rel="noopener">
+          <div class="tagbar mono"><span>indiaunbox.com</span><span class="live"><i></i>LIVE</span></div>
+          <img src="indiaunbox.jpg" alt="IndiaUnbox homepage showing a live sourcing order moving through verification stages" width="1536" height="674" loading="lazy">
+        </a>
+      </div>
+      <div>
+        <div class="cname">IndiaUnbox</div>
+        <div class="cwhat" data-i="iu.what">End-to-end sourcing from India — RFQ to doorstep</div>
+        <p class="bd" data-i="iu.p1">A buyer abroad describes a product. IndiaUnbox finds and verifies Indian manufacturers, then manages sampling, factory audits, production, inspection, compliance and delivery.</p>
+        <p class="bd" data-i="iu.p2">The hard part is not the catalogue, it is trust and state. Every order moves through ten stages a buyer can check, and the pipeline must stay legible to someone who cannot visit the factory.</p>
+        <ul class="spec">
+          <li><span class="mono" data-i="iu.k1">PIPELINE</span><span data-i="iu.v1">10 tracked stages, brief to delivery</span></li>
+          <li><span class="mono" data-i="iu.k2">COVERAGE</span><span data-i="iu.v2">16 manufacturing clusters, 5 export ports</span></li>
+          <li><span class="mono" data-i="iu.k3">VERIFICATION</span><span data-i="iu.v3">Every supplier human-checked, NDA on every brief</span></li>
+          <li><span class="mono" data-i="iu.k4">ALSO BUILT</span><span data-i="iu.v4">Marketplace, buyer dashboard, AI sourcing assistant</span></li>
+        </ul>
+        <div class="chiprow"><span class="ch">Next.js</span><span class="ch">React</span><span class="ch">MySQL</span><span class="ch">API</span><span class="ch">Auth</span><span class="ch">SEO</span></div>
+        <a class="open" href="https://indiaunbox.com" target="_blank" rel="noopener"><span data-i="ui.open">Open</span> indiaunbox.com</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="finder">
-      <div class="fsearch">
+<!-- ============ 02 ============ -->
+<section class="sec deep" style="border-top-color:var(--deep-rule)">
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">02</span><span class="sttl mono" data-i="sec.cons">CONSIGNMENT — LIVE PRODUCT</span></div>
+    <div class="cons">
+      <div>
+        <div class="cname">SkilledMBA</div>
+        <div class="cwhat" data-i="sm.what">An index of AI tools for the MBA community</div>
+        <p class="bd" data-i="sm.p1">There are more AI tools than anyone can evaluate. SkilledMBA curates them and maps each to the subjects, skills and roles it serves, so a finance student and an HR lead get different, correct answers.</p>
+        <p class="bd" data-i="sm.p2">The work I am most pleased with is the taxonomy — categories built around how people search rather than how tools describe themselves. Routing and schema follow from that.</p>
+        <ul class="spec">
+          <li><span class="mono" data-i="sm.k1">CATALOGUE</span><span data-i="sm.v1">1,000+ tools, 22 MBA subjects, updated weekly</span></li>
+          <li><span class="mono" data-i="sm.k2">FINDING</span><span data-i="sm.v2">Search plus subject, role and skill filters</span></li>
+          <li><span class="mono" data-i="sm.k3">ACCOUNTS</span><span data-i="sm.v3">Member-gated listings, Free / Pro / Team tiers</span></li>
+          <li><span class="mono" data-i="sm.k4">ALSO BUILT</span><span data-i="sm.v4">Blog, category pages, SEO structure</span></li>
+        </ul>
+        <div class="chiprow"><span class="ch">Next.js</span><span class="ch">React</span><span class="ch">MySQL</span><span class="ch">Search</span><span class="ch">Auth</span><span class="ch">SEO</span></div>
+        <a class="open" href="https://skilledmba.com" target="_blank" rel="noopener"><span data-i="ui.open">Open</span> skilledmba.com</a>
+      </div>
+      <div>
+        <a class="shot" href="https://skilledmba.com" target="_blank" rel="noopener">
+          <div class="tagbar mono"><span>skilledmba.com</span><span class="live"><i></i>LIVE</span></div>
+          <img src="skilledmba.jpg" alt="SkilledMBA homepage showing search and subject filters over a catalogue of AI tools" width="1536" height="674" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 finder ============ -->
+<section class="sec" id="build">
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">03</span><span class="sttl mono" data-i="sec.cap">CAPABILITIES — FILTER THE MANIFEST</span></div>
+    <h2 style="max-width:18ch" data-i="cap.h">Search this the way you would search a catalogue.</h2>
+    <p class="bd" data-i="cap.p">Both products do one thing: take a sprawl of options and make the right one findable. This index works the same way. Hiring for operations rather than engineering? Filter for it.</p>
+    <div class="fbar">
+      <div class="fin">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
-        <label class="sr" for="fq">Search capabilities</label>
-        <input id="fq" type="search" placeholder="Try &ldquo;Flipkart&rdquo;, &ldquo;schema&rdquo;, &ldquo;research&rdquo;&hellip;" autocomplete="off">
+        <label class="sr" for="fq" data-i="cap.search">Search capabilities</label>
+        <input id="fq" type="search" autocomplete="off">
       </div>
-      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
-      <div class="fcount" id="fcount" aria-live="polite"></div>
-      <div class="fgrid" id="fgrid"></div>
     </div>
+    <div class="fchips" id="fchips" role="group"></div>
+    <div class="fn mono" id="fn" aria-live="polite"></div>
+    <div class="fg" id="fg"></div>
   </div>
 </section>
 
-<!-- ============ IndiaUnbox ============ -->
-<section class="sec" id="work">
-  <div class="shell">
-    <div class="kicker">Live product, built alone</div>
-    <div class="phead">
-      <div><h3>IndiaUnbox</h3><div class="what">End-to-end sourcing from India — RFQ to doorstep</div></div>
-      <a class="visit" href="https://indiaunbox.com" target="_blank" rel="noopener">Open indiaunbox.com</a>
+<!-- ============ 04 record ============ -->
+<section class="sec deep" id="record">
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">04</span><span class="sttl mono" data-i="sec.rec">RECORD</span></div>
+    <h2 style="max-width:20ch" data-i="rec.h">I came to building products through data.</h2>
+    <div class="rec" style="margin-top:28px">
+      <div class="rr"><div class="rw mono">2026.07 — <span data-i="ui.now">NOW</span></div><div>
+        <h4 data-i="r1.t">Independent web developer</h4><div class="ro" data-i="r1.o">Self-employed · Hyderabad</div>
+        <p data-i="r1.p">Designing, building and shipping products end to end. IndiaUnbox and SkilledMBA both came out of this work — architecture, data model, front end, API layer, auth, SEO and deployment on each.</p></div></div>
+      <div class="rr"><div class="rw mono">2024.12 — 2026.07</div><div>
+        <h4 data-i="r2.t">Data researcher</h4><div class="ro">Collegedunia</div>
+        <p data-i="r2.p">Sourced, cleaned and validated data across many sources and turned it into reports product teams acted on. Two years of being responsible for whether a number was right.</p></div></div>
+      <div class="rr"><div class="rw mono">2024.08 — 2024.12</div><div>
+        <h4 data-i="r3.t">Operations executive</h4><div class="ro">Startek India</div>
+        <p data-i="r3.p">Process execution and reporting in a high-volume operations environment.</p></div></div>
+      <div class="rr"><div class="rw mono">2020.09 — 2024.07</div><div>
+        <h4 data-i="r4.t">Research &amp; operations</h4><div class="ro">VSAT Analytics</div>
+        <p data-i="r4.p">Client research projects plus the practical work around them: built the Botaveil and VSAT websites, ran Botaveil's Amazon and Flipkart storefronts, catalogued products, coordinated logistics.</p></div></div>
     </div>
-    <a class="frame" href="https://indiaunbox.com" target="_blank" rel="noopener">
-      <div class="chrome"><i></i><i></i><i></i><span>indiaunbox.com</span></div>
-      <img src="indiaunbox.jpg" alt="IndiaUnbox homepage showing a live sourcing order moving through verification stages" width="1536" height="674" loading="lazy">
-    </a>
-    <div class="pbody">
-      <div>
-        <p class="body" style="margin-top:0">
-          A buyer abroad describes a product. IndiaUnbox finds and verifies Indian
-          manufacturers, then manages sampling, factory audits, production, inspection,
-          compliance and delivery — anywhere from EXW to DDP.
-        </p>
-        <p class="body">
-          The hard part is not the catalogue, it is <b>trust and state</b>. Every order
-          moves through ten stages, each one something a buyer can check, and the whole
-          pipeline has to stay legible to someone in London who cannot visit the factory.
-        </p>
-        <div class="tags">
-          <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">MySQL</span>
-          <span class="tag">API routes</span><span class="tag">Auth</span><span class="tag">SEO</span>
-        </div>
-      </div>
-      <ul class="specs">
-        <li><span>Pipeline</span><span>10 tracked stages, brief to delivery</span></li>
-        <li><span>Coverage</span><span>16 manufacturing clusters, 5 export ports</span></li>
-        <li><span>Verification</span><span>Human check on every supplier, NDA on every brief</span></li>
-        <li><span>Quality</span><span>AQL 2.5 / 4.0 pre-shipment inspection</span></li>
-        <li><span>Also built</span><span>Marketplace, 12 service categories, buyer dashboard, AI sourcing assistant</span></li>
-      </ul>
+    <div class="c3" style="margin-top:42px">
+      <div><h5 class="mono" data-i="c.front">FRONT END</h5><p>Next.js<br>React<br>JavaScript<br>HTML, CSS</p></div>
+      <div><h5 class="mono" data-i="c.back">BACK END &amp; DATA</h5><p>Node.js · API routes<br>MySQL · <span data-i="c.schema">schema design</span><br>SQL<br>Python</p></div>
+      <div><h5 class="mono" data-i="c.edu">EDUCATION</h5><p data-i="c.eduv">M.Tech, Malla Reddy University (part-time, 2026—)<br>B.Tech Computer Science, 2019—2023</p></div>
     </div>
+    <p class="note"><b data-i="note.b">Plainly:</b> <span data-i="note.t">both products are JavaScript rather than TypeScript, and I have not worked with AWS. I am picking up TypeScript now. I would rather you knew that here than find it out in an interview.</span></p>
   </div>
 </section>
 
-<!-- ============ SkilledMBA ============ -->
-<section class="plate sec">
-  <div class="shell">
-    <div class="kicker">Live product, built alone</div>
-    <div class="phead">
-      <div><h3>SkilledMBA</h3><div class="what">An index of AI tools for the MBA community</div></div>
-      <a class="visit" href="https://skilledmba.com" target="_blank" rel="noopener">Open skilledmba.com</a>
-    </div>
-    <a class="frame" href="https://skilledmba.com" target="_blank" rel="noopener">
-      <div class="chrome"><i></i><i></i><i></i><span>skilledmba.com</span></div>
-      <img src="skilledmba.jpg" alt="SkilledMBA homepage showing search and subject filters over a catalogue of AI tools" width="1536" height="674" loading="lazy">
-    </a>
-    <div class="pbody">
-      <div>
-        <p class="body" style="margin-top:0">
-          There are more AI tools than anyone can evaluate. SkilledMBA curates them and
-          maps each one to the MBA subjects, skills and roles it actually serves, so a
-          finance student and an HR lead arrive at different, correct answers.
-        </p>
-        <p class="body">
-          The work I am most pleased with is the <b>taxonomy</b>. The categories are built
-          around how someone searches — by subject, by role, by skill — rather than how
-          tools describe themselves. Routing and schema both follow from that, which is
-          what keeps a thousand entries navigable instead of a long list.
-        </p>
-        <div class="tags">
-          <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">MySQL</span>
-          <span class="tag">Search</span><span class="tag">Auth</span><span class="tag">SEO</span>
-        </div>
-      </div>
-      <ul class="specs">
-        <li><span>Catalogue</span><span>1,000+ tools, 22 MBA subjects, updated weekly</span></li>
-        <li><span>Finding</span><span>Search plus subject, role and skill filters</span></li>
-        <li><span>Accounts</span><span>Member-gated listings, Free / Pro / Team tiers</span></li>
-        <li><span>Also built</span><span>Blog, category pages, SEO structure</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="sec" style="padding-top:0">
-  <div class="shell">
-    <div class="nums" id="nums">
-      <div class="num"><b data-to="2">0</b><span>Products designed, built and shipped solo</span></div>
-      <div class="num"><b data-to="1000" data-suffix="+">0</b><span>Tools catalogued and mapped on SkilledMBA</span></div>
-      <div class="num"><b data-to="10">0</b><span>Tracked order stages on IndiaUnbox</span></div>
-      <div class="num"><b data-to="4">0</b><span>Years at VSAT before that, research and operations</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ earlier ============ -->
-<section class="plate sec">
-  <div class="shell">
-    <div class="kicker">Earlier — four years at VSAT Analytics</div>
-    <h2 style="max-width:20ch">Before the products, I was the one who got things shipped.</h2>
-    <p class="body" style="max-width:62ch">
-      VSAT was not only research. It was whatever the business needed next — a site built,
-      a marketplace account run, a shipment chased, a dataset turned into something a
-      client could act on. It is where I learned to own an outcome rather than a task.
-    </p>
-    <div class="grid2">
-      <div class="cell"><h4>Botaveil website</h4><p>Built and maintained the company's site.</p></div>
-      <div class="cell"><h4>VSAT Analytics website</h4><p>Built and maintained the firm's own site.</p></div>
-      <div class="cell"><h4>Amazon &amp; Flipkart storefronts</h4><p>Ran Botaveil's marketplace presence — listings, catalogue structure and product pages on both platforms.</p></div>
-      <div class="cell"><h4>Product cataloguing</h4><p>Built and uploaded product data at volume, and kept it accurate across channels.</p></div>
-      <div class="cell"><h4>Logistics</h4><p>Coordinated shipping and fulfilment — the same ground IndiaUnbox now covers in software.</p></div>
-      <div class="cell"><h4>Client research projects</h4><p>Market and sector research delivered to clients, across several engagements.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ experience ============ -->
-<section class="plate sec" id="experience" style="padding-top:0">
-  <div class="shell">
-    <div class="kicker">Experience</div>
-    <h2 style="max-width:19ch;margin-bottom:34px">I came to building products through data.</h2>
-    <div class="role">
-      <div class="yr">Jul 2026 — now</div>
-      <div><h4>Independent web developer</h4><div class="org">Self-employed · Hyderabad</div>
-        <p>Designing, building and shipping products end to end. IndiaUnbox and SkilledMBA both came out of this work — architecture, data model, front end, API layer, auth, SEO and deployment on each.</p></div>
-    </div>
-    <div class="role">
-      <div class="yr">Dec 2024 — Jul 2026</div>
-      <div><h4>Data researcher</h4><div class="org">Collegedunia</div>
-        <p>Sourced, cleaned and validated data across many sources and turned it into reports content and product teams acted on. Two years of being responsible for whether a number was right — it is why I design schemas the way I do.</p></div>
-    </div>
-    <div class="role">
-      <div class="yr">Aug 2024 — Dec 2024</div>
-      <div><h4>Operations executive</h4><div class="org">Startek India</div>
-        <p>Process execution and reporting in a high-volume operations environment.</p></div>
-    </div>
-    <div class="role">
-      <div class="yr">Sep 2020 — Jul 2024</div>
-      <div><h4>Research &amp; operations</h4><div class="org">VSAT Analytics</div>
-        <p>Client research projects, plus the practical work around them: built the Botaveil and VSAT Analytics websites, ran Botaveil's Amazon and Flipkart storefronts, catalogued and uploaded products, and coordinated logistics.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ stack ============ -->
-<section class="plate sec" style="padding-top:0">
-  <div class="shell">
-    <div class="kicker">What I work in</div>
-    <div class="cols">
-      <div class="col"><h5>Front end</h5><p>Next.js<br>React<br>JavaScript<br>HTML, CSS, responsive UI</p></div>
-      <div class="col"><h5>Back end and data</h5><p>Node.js via Next.js API routes<br>MySQL, schema design<br>SQL<br>Python</p></div>
-      <div class="col"><h5>Shipping</h5><p>Git<br>Deployment<br>SEO<br>Core Web Vitals</p></div>
-    </div>
-    <div class="cols" style="margin-top:clamp(36px,4.6vw,56px)">
-      <div class="col"><h5>Studying</h5><p>M.Tech, Malla Reddy University<br>Aug 2026 — present, part-time</p></div>
-      <div class="col"><h5>Degree</h5><p>B.Tech, Computer Science<br>Malla Reddy College of Engineering, 2019—2023</p></div>
-      <div class="col"><h5>Also comfortable with</h5><p>E-commerce operations<br>Marketplace listings<br>Logistics coordination<br>Market &amp; sector research</p></div>
-    </div>
-    <p class="plainly">
-      <b>Plainly:</b> both products are JavaScript rather than TypeScript, and I have not
-      worked with AWS. I am picking up TypeScript now. I would rather you knew that here
-      than find it out in an interview.
-    </p>
-  </div>
-</section>
-
-<!-- ============ profiles ============ -->
+<!-- ============ 05 profiles ============ -->
 <section class="sec" id="profiles">
-  <div class="shell">
-    <div class="kicker">Profiles</div>
-    <h2 style="max-width:16ch">Everywhere else you can check.</h2>
-    <div class="plist">
-      <a class="prow" href="https://github.com/vinnymadasu" target="_blank" rel="noopener">
-        <span><span class="nm">GitHub</span><span class="hd">github.com/vinnymadasu</span></span><span class="go">→</span></a>
-      <a class="prow" href="https://www.linkedin.com/in/vineeth-rao-madasu-bb46651a5" target="_blank" rel="noopener">
-        <span><span class="nm">LinkedIn</span><span class="hd">in/vineeth-rao-madasu</span></span><span class="go">→</span></a>
-      <a class="prow" href="https://www.upwork.com/freelancers/~01055b497900c5b3d9" target="_blank" rel="noopener">
-        <span><span class="nm">Upwork</span><span class="hd">Freelance profile</span></span><span class="go">→</span></a>
-      <a class="prow" href="https://www.credly.com/users/madasu-vineeth-rao" target="_blank" rel="noopener">
-        <span><span class="nm">Credly</span><span class="hd">Verified certifications</span></span><span class="go">→</span></a>
-      <a class="prow" href="https://indiaunbox.com" target="_blank" rel="noopener">
-        <span><span class="nm">IndiaUnbox</span><span class="hd">indiaunbox.com — live product</span></span><span class="go">→</span></a>
-      <a class="prow" href="https://skilledmba.com" target="_blank" rel="noopener">
-        <span><span class="nm">SkilledMBA</span><span class="hd">skilledmba.com — live product</span></span><span class="go">→</span></a>
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">05</span><span class="sttl mono" data-i="sec.pf">PROFILES</span></div>
+    <div class="pf">
+      <a class="pfa" href="https://github.com/vinnymadasu" target="_blank" rel="noopener"><span><span class="pn">GitHub</span><span class="ph">github.com/vinnymadasu</span></span><span class="px">↗</span></a>
+      <a class="pfa" href="https://www.linkedin.com/in/vineeth-rao-madasu-bb46651a5" target="_blank" rel="noopener"><span><span class="pn">LinkedIn</span><span class="ph">in/vineeth-rao-madasu</span></span><span class="px">↗</span></a>
+      <a class="pfa" href="https://www.upwork.com/freelancers/~01055b497900c5b3d9" target="_blank" rel="noopener"><span><span class="pn">Upwork</span><span class="ph" data-i="pf.up">Freelance profile</span></span><span class="px">↗</span></a>
+      <a class="pfa" href="https://www.credly.com/users/madasu-vineeth-rao" target="_blank" rel="noopener"><span><span class="pn">Credly</span><span class="ph" data-i="pf.cr">Verified certifications</span></span><span class="px">↗</span></a>
+      <a class="pfa" href="https://indiaunbox.com" target="_blank" rel="noopener"><span><span class="pn">IndiaUnbox</span><span class="ph">indiaunbox.com</span></span><span class="px">↗</span></a>
+      <a class="pfa" href="https://skilledmba.com" target="_blank" rel="noopener"><span><span class="pn">SkilledMBA</span><span class="ph">skilledmba.com</span></span><span class="px">↗</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============ contact ============ -->
-<section class="sec" id="contact" style="padding-top:0">
-  <div class="shell">
-    <div class="kicker">Get in touch</div>
-    <h2 style="max-width:18ch">Hiring for engineering, data or operations?</h2>
-    <p class="lead">
-      Available immediately — Hyderabad, elsewhere in India, or remote. Both codebases
-      are live, and I am happy to walk you through either one.
-    </p>
-    <div class="mailrow">
-      <a class="mailto" href="mailto:dadymom91@gmail.com">dadymom91@gmail.com</a>
-      <button class="copy" id="copyMail">Copy</button>
-    </div>
+<!-- ============ 06 contact ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="shead"><span class="snum mono">06</span><span class="sttl mono" data-i="sec.ct">CONTACT</span></div>
+    <h2 style="max-width:17ch" data-i="ct.h">Hiring for engineering, data or operations?</h2>
+    <p class="bd" id="ctLine" data-i="ct.p">Available immediately — Hyderabad, elsewhere in India, or remote. Both codebases are live and I am happy to walk you through either.</p>
+    <div><a class="mailbig" href="mailto:dadymom91@gmail.com">dadymom91@gmail.com</a><button class="cpy" id="cpy" data-i="ui.copy">Copy</button></div>
   </div>
+  <div class="wrap"><div class="foot">
+    <span class="mono">VINEETH RAO MADASU · HYDERABAD, IN</span>
+    <span class="mono"><span data-i="ui.press">PRESS</span> <kbd>⌘K</kbd></span>
+  </div></div>
 </section>
 
-<footer>
-  <div class="shell">
-    <span>Vineeth Rao Madasu — Hyderabad, India</span>
-    <span>Press <kbd>⌘K</kbd> to search</span>
-  </div>
-</footer>
-
-<!-- ============ command palette ============ -->
 <div class="pal" id="pal" role="dialog" aria-modal="true" aria-label="Command palette">
-  <div class="palbg" data-close></div>
-  <div class="palbox">
-    <div class="palin">
-      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
-      <label class="sr" for="palq">Search sections, profiles and actions</label>
-      <input id="palq" type="text" placeholder="Search sections, profiles, actions…" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="palres" id="palres"></div>
-    <div class="palfoot">
-      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
-      <span><kbd>↵</kbd> open</span>
-      <span><kbd>esc</kbd> close</span>
-    </div>
+  <div class="pbg" data-cl></div>
+  <div class="pbox">
+    <div class="pq"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <label class="sr" for="pq">Search</label><input id="pq" type="text" autocomplete="off" spellcheck="false"></div>
+    <div class="pr" id="pr"></div>
+    <div class="pft mono"><span>↑↓ <span data-i="ui.nav">NAVIGATE</span></span><span>↵ <span data-i="ui.open2">OPEN</span></span><span>ESC <span data-i="ui.close">CLOSE</span></span></div>
   </div>
 </div>
-
 <div class="toast" id="toast"></div>
 
 <script>
 (function(){
-  "use strict";
-  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+"use strict";
+var R=matchMedia('(prefers-reduced-motion:reduce)').matches, root=document.documentElement;
 
-  /* ---------- theme ---------- */
-  var root = document.documentElement;
-  function setTheme(t){
-    root.setAttribute('data-theme', t);
-    try{ localStorage.setItem('vm-theme', t); }catch(e){}
-    var m = document.querySelector('meta[name="theme-color"]');
-    if(m) m.setAttribute('content', t==='dark' ? '#121210' : '#f4f3ef');
-  }
-  document.getElementById('theme').addEventListener('click', function(){
-    setTheme(root.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
-  });
+/* ---------- markets + i18n ---------- */
+var MK=[
+ {id:'us',n:'United States',lang:'en',tz:'America/New_York'},
+ {id:'uk',n:'United Kingdom',lang:'en',tz:'Europe/London'},
+ {id:'de',n:'Deutschland',lang:'de',tz:'Europe/Berlin'},
+ {id:'fr',n:'France',lang:'fr',tz:'Europe/Paris'},
+ {id:'es',n:'España',lang:'es',tz:'Europe/Madrid'},
+ {id:'br',n:'Brasil',lang:'pt',tz:'America/Sao_Paulo'},
+ {id:'jp',n:'日本',lang:'ja',tz:'Asia/Tokyo'},
+ {id:'sg',n:'Singapore',lang:'en',tz:'Asia/Singapore'},
+ {id:'in',n:'भारत',lang:'hi',tz:'Asia/Kolkata'}
+];
+var T={
+en:{},
+de:{
+'ui.search':'Suchen','ui.open':'Öffnen','ui.copy':'Kopieren','ui.now':'HEUTE','ui.press':'DRÜCKEN','ui.nav':'NAVIGIEREN','ui.open2':'ÖFFNEN','ui.close':'SCHLIESSEN',
+'route.origin':'HERKUNFT','route.dest':'ZIELMARKT','route.pick':'Zielmarkt und Sprache wählen',
+'hero.h':'Ich baue Systeme, die Dinge <em>über Grenzen bewegen</em> und auffindbar machen.',
+'hero.sub':'Zwei davon sind live und ich habe beide allein gebaut: eine B2B-Plattform, die Waren von indischen Fabriken in Lager im Ausland bringt, und ein Verzeichnis von über 1.000 KI-Tools für 22 MBA-Fächer.',
+'s.base':'STANDORT','s.avail':'VERFÜGBARKEIT','s.availv':'Sofort','s.stack':'TECHNOLOGIE','s.mode':'ARBEITSWEISE','s.modev':'Vor Ort · Hybrid · Remote',
+'sec.cons':'SENDUNG — LIVE-PRODUKT','sec.cap':'FÄHIGKEITEN — MANIFEST FILTERN','sec.rec':'WERDEGANG','sec.pf':'PROFILE','sec.ct':'KONTAKT',
+'iu.what':'Beschaffung aus Indien — von der Anfrage bis zur Haustür',
+'iu.p1':'Ein Käufer im Ausland beschreibt ein Produkt. IndiaUnbox findet und prüft indische Hersteller und steuert dann Bemusterung, Fabrikaudits, Produktion, Inspektion, Compliance und Lieferung.',
+'iu.p2':'Das Schwierige ist nicht der Katalog, sondern Vertrauen und Status. Jede Bestellung durchläuft zehn nachvollziehbare Stufen, und die Abläufe müssen auch für jemanden verständlich bleiben, der die Fabrik nie besucht.',
+'iu.k1':'ABLAUF','iu.v1':'10 verfolgte Stufen, vom Briefing bis zur Lieferung','iu.k2':'ABDECKUNG','iu.v2':'16 Fertigungscluster, 5 Exporthäfen','iu.k3':'PRÜFUNG','iu.v3':'Jeder Lieferant persönlich geprüft, NDA bei jedem Briefing','iu.k4':'AUSSERDEM','iu.v4':'Marktplatz, Käufer-Dashboard, KI-Beschaffungsassistent',
+'sm.what':'Ein Verzeichnis von KI-Tools für die MBA-Community',
+'sm.p1':'Es gibt mehr KI-Tools, als irgendjemand prüfen kann. SkilledMBA kuratiert sie und ordnet jedes den Fächern, Fähigkeiten und Rollen zu, denen es dient — so erhalten ein Finanzstudent und eine HR-Leitung unterschiedliche, jeweils richtige Antworten.',
+'sm.p2':'Worauf ich am meisten stolz bin, ist die Taxonomie — Kategorien, die sich danach richten, wie Menschen suchen, und nicht danach, wie Tools sich selbst beschreiben. Routing und Schema folgen daraus.',
+'sm.k1':'KATALOG','sm.v1':'Über 1.000 Tools, 22 MBA-Fächer, wöchentlich aktualisiert','sm.k2':'FINDEN','sm.v2':'Suche plus Filter nach Fach, Rolle und Fähigkeit','sm.k3':'KONTEN','sm.v3':'Mitglieder-Zugang, Free / Pro / Team','sm.k4':'AUSSERDEM','sm.v4':'Blog, Kategorieseiten, SEO-Struktur',
+'cap.h':'Durchsuchen Sie das wie einen Katalog.','cap.p':'Beide Produkte tun eines: aus einer Fülle von Optionen die richtige auffindbar machen. Dieses Verzeichnis funktioniert genauso. Sie suchen Operations statt Engineering? Filtern Sie danach.','cap.search':'Fähigkeiten durchsuchen',
+'rec.h':'Über Daten bin ich zum Produktbau gekommen.',
+'r1.t':'Selbstständiger Webentwickler','r1.o':'Selbstständig · Hyderabad','r1.p':'Produkte von Anfang bis Ende entworfen, gebaut und ausgeliefert. IndiaUnbox und SkilledMBA sind daraus entstanden — Architektur, Datenmodell, Frontend, API-Schicht, Auth, SEO und Deployment.',
+'r2.t':'Datenrechercheur','r2.p':'Daten aus vielen Quellen beschafft, bereinigt und validiert und zu Berichten verarbeitet, auf deren Basis Produktteams gehandelt haben. Zwei Jahre Verantwortung dafür, ob eine Zahl stimmt.',
+'r3.t':'Operations Executive','r3.p':'Prozessabwicklung und Reporting in einem Umfeld mit hohem Volumen.',
+'r4.t':'Research & Operations','r4.p':'Kundenprojekte in der Recherche und die praktische Arbeit darum herum: die Websites von Botaveil und VSAT gebaut, Botaveils Amazon- und Flipkart-Shops betreut, Produkte katalogisiert, Logistik koordiniert.',
+'c.front':'FRONTEND','c.back':'BACKEND & DATEN','c.schema':'Schema-Design','c.edu':'AUSBILDUNG','c.eduv':'M.Tech, Malla Reddy University (berufsbegleitend, seit 2026)<br>B.Tech Informatik, 2019—2023',
+'note.b':'Ganz offen:','note.t':'beide Produkte sind in JavaScript, nicht TypeScript, und mit AWS habe ich noch nicht gearbeitet. TypeScript lerne ich gerade. Das sollen Sie lieber hier erfahren als im Gespräch.',
+'pf.up':'Freelancer-Profil','pf.cr':'Verifizierte Zertifikate',
+'ct.h':'Sie stellen in Engineering, Daten oder Operations ein?','ct.p':'Sofort verfügbar — Hyderabad, anderswo in Indien oder remote. Beide Codebasen sind live und ich führe Sie gerne durch eine davon.'
+},
+fr:{
+'ui.search':'Rechercher','ui.open':'Ouvrir','ui.copy':'Copier','ui.now':"AUJOURD'HUI",'ui.press':'APPUYEZ','ui.nav':'NAVIGUER','ui.open2':'OUVRIR','ui.close':'FERMER',
+'route.origin':'ORIGINE','route.dest':'MARCHÉ CIBLE','route.pick':'Choisir le marché et la langue',
+'hero.h':'Je construis des systèmes qui déplacent les choses <em>au-delà des frontières</em> et les rendent trouvables.',
+'hero.sub':"Deux sont en ligne et je les ai construits seul : une plateforme B2B qui achemine des marchandises des usines indiennes vers des entrepôts à l'étranger, et un index de plus de 1 000 outils d'IA couvrant 22 matières de MBA.",
+'s.base':'BASÉ À','s.avail':'DISPONIBILITÉ','s.availv':'Immédiate','s.stack':'TECHNOLOGIES','s.mode':'MODE','s.modev':'Sur site · Hybride · À distance',
+'sec.cons':'EXPÉDITION — PRODUIT EN LIGNE','sec.cap':'COMPÉTENCES — FILTRER LE MANIFESTE','sec.rec':'PARCOURS','sec.pf':'PROFILS','sec.ct':'CONTACT',
+'iu.what':"Sourcing depuis l'Inde — de la demande à la livraison",
+'iu.p1':"Un acheteur à l'étranger décrit un produit. IndiaUnbox trouve et vérifie des fabricants indiens, puis gère l'échantillonnage, les audits d'usine, la production, l'inspection, la conformité et la livraison.",
+'iu.p2':"Le difficile n'est pas le catalogue, c'est la confiance et le suivi. Chaque commande passe par dix étapes vérifiables, et tout doit rester lisible pour quelqu'un qui ne peut pas visiter l'usine.",
+'iu.k1':'PROCESSUS','iu.v1':'10 étapes suivies, du brief à la livraison','iu.k2':'COUVERTURE','iu.v2':"16 pôles industriels, 5 ports d'export",'iu.k3':'VÉRIFICATION','iu.v3':'Chaque fournisseur vérifié par un humain, NDA sur chaque brief','iu.k4':'AUSSI CONSTRUIT','iu.v4':"Place de marché, tableau de bord acheteur, assistant d'achat IA",
+'sm.what':"Un index d'outils d'IA pour la communauté MBA",
+'sm.p1':"Il existe plus d'outils d'IA que quiconque ne peut en évaluer. SkilledMBA les sélectionne et associe chacun aux matières, compétences et rôles qu'il sert, afin qu'un étudiant en finance et un responsable RH obtiennent des réponses différentes et justes.",
+'sm.p2':"Ce dont je suis le plus satisfait, c'est la taxonomie — des catégories construites selon la façon dont les gens cherchent, et non selon la façon dont les outils se décrivent. Le routage et le schéma en découlent.",
+'sm.k1':'CATALOGUE','sm.v1':'Plus de 1 000 outils, 22 matières, mis à jour chaque semaine','sm.k2':'RECHERCHE','sm.v2':'Recherche et filtres par matière, rôle et compétence','sm.k3':'COMPTES','sm.v3':'Contenus réservés aux membres, offres Free / Pro / Team','sm.k4':'AUSSI CONSTRUIT','sm.v4':'Blog, pages de catégories, structure SEO',
+'cap.h':'Cherchez ici comme dans un catalogue.','cap.p':"Les deux produits font une seule chose : prendre une masse d'options et rendre la bonne trouvable. Cet index fonctionne pareil. Vous recrutez en opérations plutôt qu'en ingénierie ? Filtrez.",'cap.search':'Rechercher des compétences',
+'rec.h':'Je suis venu au produit par la donnée.',
+'r1.t':'Développeur web indépendant','r1.o':'Indépendant · Hyderabad','r1.p':"Conception, développement et mise en ligne de produits de bout en bout. IndiaUnbox et SkilledMBA en sont issus — architecture, modèle de données, front-end, couche API, authentification, SEO et déploiement.",
+'r2.t':'Chargé de recherche de données','r2.p':"Sourcing, nettoyage et validation de données issues de nombreuses sources, transformées en rapports sur lesquels les équipes produit se sont appuyées. Deux ans à être responsable de l'exactitude d'un chiffre.",
+'r3.t':"Chargé d'exploitation",'r3.p':"Exécution de processus et reporting dans un environnement à fort volume.",
+'r4.t':'Recherche & opérations','r4.p':"Projets de recherche clients et le travail concret autour : création des sites Botaveil et VSAT, gestion des boutiques Amazon et Flipkart de Botaveil, catalogage produits, coordination logistique.",
+'c.front':'FRONT-END','c.back':'BACK-END & DONNÉES','c.schema':'conception de schémas','c.edu':'FORMATION','c.eduv':'M.Tech, Malla Reddy University (en alternance, depuis 2026)<br>B.Tech Informatique, 2019—2023',
+'note.b':'Pour être clair :','note.t':"les deux produits sont en JavaScript et non en TypeScript, et je n'ai pas travaillé avec AWS. J'apprends TypeScript en ce moment. Je préfère vous le dire ici plutôt qu'en entretien.",
+'pf.up':'Profil freelance','pf.cr':'Certifications vérifiées',
+'ct.h':'Vous recrutez en ingénierie, data ou opérations ?','ct.p':"Disponible immédiatement — Hyderabad, ailleurs en Inde, ou à distance. Les deux bases de code sont en ligne et je vous les présenterai volontiers."
+},
+es:{
+'ui.search':'Buscar','ui.open':'Abrir','ui.copy':'Copiar','ui.now':'HOY','ui.press':'PULSA','ui.nav':'NAVEGAR','ui.open2':'ABRIR','ui.close':'CERRAR',
+'route.origin':'ORIGEN','route.dest':'MERCADO DESTINO','route.pick':'Elegir mercado e idioma',
+'hero.h':'Construyo sistemas que mueven cosas <em>a través de fronteras</em> y las hacen encontrables.',
+'hero.sub':'Dos están en línea y construí ambos solo: una plataforma B2B que lleva mercancías de fábricas indias a almacenes en el extranjero, y un índice de más de 1.000 herramientas de IA en 22 materias de MBA.',
+'s.base':'UBICACIÓN','s.avail':'DISPONIBILIDAD','s.availv':'Inmediata','s.stack':'TECNOLOGÍA','s.mode':'MODALIDAD','s.modev':'Presencial · Híbrido · Remoto',
+'sec.cons':'ENVÍO — PRODUCTO EN VIVO','sec.cap':'CAPACIDADES — FILTRAR EL MANIFIESTO','sec.rec':'TRAYECTORIA','sec.pf':'PERFILES','sec.ct':'CONTACTO',
+'iu.what':'Abastecimiento desde India — de la solicitud a la puerta',
+'iu.p1':'Un comprador en el extranjero describe un producto. IndiaUnbox encuentra y verifica fabricantes indios, y luego gestiona el muestreo, las auditorías de fábrica, la producción, la inspección, el cumplimiento normativo y la entrega.',
+'iu.p2':'Lo difícil no es el catálogo, sino la confianza y el estado. Cada pedido pasa por diez etapas comprobables, y todo debe seguir siendo legible para alguien que no puede visitar la fábrica.',
+'iu.k1':'PROCESO','iu.v1':'10 etapas rastreadas, del brief a la entrega','iu.k2':'COBERTURA','iu.v2':'16 clústeres industriales, 5 puertos de exportación','iu.k3':'VERIFICACIÓN','iu.v3':'Cada proveedor verificado por una persona, NDA en cada brief','iu.k4':'TAMBIÉN','iu.v4':'Marketplace, panel del comprador, asistente de compras con IA',
+'sm.what':'Un índice de herramientas de IA para la comunidad MBA',
+'sm.p1':'Hay más herramientas de IA de las que nadie puede evaluar. SkilledMBA las selecciona y asigna cada una a las materias, habilidades y roles a los que sirve, de modo que un estudiante de finanzas y una responsable de RR. HH. obtengan respuestas distintas y correctas.',
+'sm.p2':'De lo que más satisfecho estoy es de la taxonomía: categorías construidas según cómo busca la gente, no según cómo se describen las herramientas. El enrutado y el esquema se derivan de ahí.',
+'sm.k1':'CATÁLOGO','sm.v1':'Más de 1.000 herramientas, 22 materias, actualizado cada semana','sm.k2':'BÚSQUEDA','sm.v2':'Buscador y filtros por materia, rol y habilidad','sm.k3':'CUENTAS','sm.v3':'Contenido para miembros, planes Free / Pro / Team','sm.k4':'TAMBIÉN','sm.v4':'Blog, páginas de categoría, estructura SEO',
+'cap.h':'Búscalo como buscarías en un catálogo.','cap.p':'Ambos productos hacen una cosa: tomar un montón de opciones y hacer que la correcta se encuentre. Este índice funciona igual. ¿Contratas para operaciones en lugar de ingeniería? Fíltralo.','cap.search':'Buscar capacidades',
+'rec.h':'Llegué a construir productos a través de los datos.',
+'r1.t':'Desarrollador web independiente','r1.o':'Autónomo · Hyderabad','r1.p':'Diseño, desarrollo y lanzamiento de productos de principio a fin. IndiaUnbox y SkilledMBA surgieron de este trabajo: arquitectura, modelo de datos, front-end, capa de API, autenticación, SEO y despliegue.',
+'r2.t':'Investigador de datos','r2.p':'Obtuve, limpié y validé datos de muchas fuentes y los convertí en informes sobre los que actuaron los equipos de producto. Dos años siendo responsable de si una cifra era correcta.',
+'r3.t':'Ejecutivo de operaciones','r3.p':'Ejecución de procesos y reporting en un entorno de alto volumen.',
+'r4.t':'Investigación y operaciones','r4.p':'Proyectos de investigación para clientes y el trabajo práctico alrededor: construí los sitios de Botaveil y VSAT, gestioné las tiendas de Botaveil en Amazon y Flipkart, catalogué productos y coordiné logística.',
+'c.front':'FRONT-END','c.back':'BACK-END Y DATOS','c.schema':'diseño de esquemas','c.edu':'FORMACIÓN','c.eduv':'M.Tech, Malla Reddy University (a tiempo parcial, desde 2026)<br>B.Tech en Informática, 2019—2023',
+'note.b':'Con claridad:','note.t':'ambos productos están en JavaScript y no en TypeScript, y no he trabajado con AWS. Ahora estoy aprendiendo TypeScript. Prefiero que lo sepas aquí y no en una entrevista.',
+'pf.up':'Perfil freelance','pf.cr':'Certificaciones verificadas',
+'ct.h':'¿Contratas en ingeniería, datos u operaciones?','ct.p':'Disponible de inmediato — Hyderabad, en otro lugar de India, o en remoto. Ambos códigos están en línea y te los enseño encantado.'
+},
+pt:{
+'ui.search':'Pesquisar','ui.open':'Abrir','ui.copy':'Copiar','ui.now':'HOJE','ui.press':'PRESSIONE','ui.nav':'NAVEGAR','ui.open2':'ABRIR','ui.close':'FECHAR',
+'route.origin':'ORIGEM','route.dest':'MERCADO DESTINO','route.pick':'Escolher mercado e idioma',
+'hero.h':'Eu construo sistemas que movem coisas <em>através de fronteiras</em> e as tornam encontráveis.',
+'hero.sub':'Dois estão no ar e construí ambos sozinho: uma plataforma B2B que leva mercadorias de fábricas indianas a armazéns no exterior, e um índice de mais de 1.000 ferramentas de IA em 22 disciplinas de MBA.',
+'s.base':'LOCALIZAÇÃO','s.avail':'DISPONIBILIDADE','s.availv':'Imediata','s.stack':'TECNOLOGIA','s.mode':'MODALIDADE','s.modev':'Presencial · Híbrido · Remoto',
+'sec.cons':'REMESSA — PRODUTO NO AR','sec.cap':'CAPACIDADES — FILTRAR O MANIFESTO','sec.rec':'TRAJETÓRIA','sec.pf':'PERFIS','sec.ct':'CONTATO',
+'iu.what':'Sourcing na Índia — da cotação à porta',
+'iu.p1':'Um comprador no exterior descreve um produto. A IndiaUnbox encontra e verifica fabricantes indianos e então gerencia amostragem, auditorias de fábrica, produção, inspeção, conformidade e entrega.',
+'iu.p2':'O difícil não é o catálogo, é confiança e estado. Cada pedido passa por dez etapas verificáveis, e tudo precisa continuar claro para quem não pode visitar a fábrica.',
+'iu.k1':'FLUXO','iu.v1':'10 etapas rastreadas, do briefing à entrega','iu.k2':'COBERTURA','iu.v2':'16 polos industriais, 5 portos de exportação','iu.k3':'VERIFICAÇÃO','iu.v3':'Cada fornecedor verificado por uma pessoa, NDA em cada briefing','iu.k4':'TAMBÉM','iu.v4':'Marketplace, painel do comprador, assistente de sourcing com IA',
+'sm.what':'Um índice de ferramentas de IA para a comunidade MBA',
+'sm.p1':'Existem mais ferramentas de IA do que alguém consegue avaliar. A SkilledMBA as organiza e associa cada uma às disciplinas, habilidades e funções que atende, para que um estudante de finanças e um líder de RH cheguem a respostas diferentes e corretas.',
+'sm.p2':'O trabalho de que mais me orgulho é a taxonomia — categorias construídas segundo como as pessoas buscam, e não como as ferramentas se descrevem. O roteamento e o esquema decorrem disso.',
+'sm.k1':'CATÁLOGO','sm.v1':'Mais de 1.000 ferramentas, 22 disciplinas, atualizado semanalmente','sm.k2':'BUSCA','sm.v2':'Busca e filtros por disciplina, função e habilidade','sm.k3':'CONTAS','sm.v3':'Conteúdo para membros, planos Free / Pro / Team','sm.k4':'TAMBÉM','sm.v4':'Blog, páginas de categoria, estrutura de SEO',
+'cap.h':'Pesquise como pesquisaria um catálogo.','cap.p':'Ambos os produtos fazem uma coisa: pegar um monte de opções e tornar a certa encontrável. Este índice funciona igual. Contratando para operações em vez de engenharia? Filtre.','cap.search':'Pesquisar capacidades',
+'rec.h':'Cheguei a construir produtos através dos dados.',
+'r1.t':'Desenvolvedor web independente','r1.o':'Autônomo · Hyderabad','r1.p':'Projetei, construí e lancei produtos de ponta a ponta. IndiaUnbox e SkilledMBA vieram desse trabalho — arquitetura, modelo de dados, front-end, camada de API, autenticação, SEO e deploy.',
+'r2.t':'Pesquisador de dados','r2.p':'Busquei, limpei e validei dados de muitas fontes e os transformei em relatórios que orientaram times de produto. Dois anos sendo responsável por um número estar certo.',
+'r3.t':'Executivo de operações','r3.p':'Execução de processos e relatórios em ambiente de alto volume.',
+'r4.t':'Pesquisa e operações','r4.p':'Projetos de pesquisa para clientes e o trabalho prático em volta: construí os sites da Botaveil e da VSAT, cuidei das lojas da Botaveil na Amazon e no Flipkart, cataloguei produtos e coordenei logística.',
+'c.front':'FRONT-END','c.back':'BACK-END E DADOS','c.schema':'modelagem de esquema','c.edu':'FORMAÇÃO','c.eduv':'M.Tech, Malla Reddy University (meio período, desde 2026)<br>B.Tech em Ciência da Computação, 2019—2023',
+'note.b':'Sendo direto:','note.t':'os dois produtos são em JavaScript e não TypeScript, e não trabalhei com AWS. Estou aprendendo TypeScript agora. Prefiro que você saiba aqui do que descobrir numa entrevista.',
+'pf.up':'Perfil freelance','pf.cr':'Certificações verificadas',
+'ct.h':'Contratando em engenharia, dados ou operações?','ct.p':'Disponível imediatamente — Hyderabad, outro lugar da Índia, ou remoto. Os dois códigos estão no ar e mostro qualquer um com prazer.'
+},
+ja:{
+'ui.search':'検索','ui.open':'開く','ui.copy':'コピー','ui.now':'現在','ui.press':'押す','ui.nav':'移動','ui.open2':'開く','ui.close':'閉じる',
+'route.origin':'出発地','route.dest':'対象市場','route.pick':'市場と言語を選択',
+'hero.h':'<em>国境を越えて</em>モノを動かし、見つけられるようにする仕組みをつくっています。',
+'hero.sub':'うち2つは公開中で、どちらも一人で開発しました。インドの工場から海外の倉庫へ商品を動かすBtoBプラットフォームと、MBAの22科目にわたる1,000以上のAIツールのインデックスです。',
+'s.base':'拠点','s.avail':'就業可能時期','s.availv':'即日','s.stack':'技術','s.mode':'勤務形態','s.modev':'出社 · ハイブリッド · リモート',
+'sec.cons':'案件 — 公開中のプロダクト','sec.cap':'できること — 絞り込み','sec.rec':'経歴','sec.pf':'プロフィール','sec.ct':'連絡先',
+'iu.what':'インドからの一貫調達 — 見積依頼から配送まで',
+'iu.p1':'海外のバイヤーが製品を伝えると、IndiaUnboxがインドのメーカーを探して審査し、サンプル製作、工場監査、生産、検品、法令対応、配送までを管理します。',
+'iu.p2':'難しいのはカタログではなく、信頼と進捗の可視化です。すべての注文は確認可能な10の工程を通り、工場に行けない人にも分かる形で保たれる必要があります。',
+'iu.k1':'工程','iu.v1':'依頼から納品まで10工程を追跡','iu.k2':'対象範囲','iu.v2':'製造クラスター16か所、輸出港5か所','iu.k3':'審査','iu.v3':'全サプライヤーを人の目で確認、全案件でNDA','iu.k4':'その他','iu.v4':'マーケットプレイス、バイヤー向けダッシュボード、AI調達アシスタント',
+'sm.what':'MBAコミュニティ向けAIツールのインデックス',
+'sm.p1':'AIツールは誰も評価しきれないほど増えています。SkilledMBAはそれらを選び、各ツールが役立つ科目・スキル・役割に紐づけます。だから財務の学生と人事の責任者が、それぞれ違う正しい答えにたどり着けます。',
+'sm.p2':'最も手応えがあるのは分類設計です。ツール側の自己説明ではなく、人がどう探すかを軸にカテゴリーを組み立てました。ルーティングもスキーマもそこから決まります。',
+'sm.k1':'収録数','sm.v1':'1,000以上のツール、MBA22科目、毎週更新','sm.k2':'検索','sm.v2':'検索と、科目・役割・スキルによる絞り込み','sm.k3':'アカウント','sm.v3':'会員限定の掲載、Free / Pro / Team プラン','sm.k4':'その他','sm.v4':'ブログ、カテゴリーページ、SEO構造',
+'cap.h':'カタログを探すように、ここを探してください。','cap.p':'2つのプロダクトがしていることは同じです。膨大な選択肢の中から、正しい一つを見つけられるようにすること。このインデックスも同じ仕組みです。エンジニアリングではなくオペレーションの採用なら、そこで絞り込んでください。','cap.search':'できることを検索',
+'rec.h':'データを通じて、プロダクトづくりにたどり着きました。',
+'r1.t':'独立系ウェブ開発者','r1.o':'個人事業 · ハイデラバード','r1.p':'設計から公開まで一貫してプロダクトを開発。IndiaUnboxとSkilledMBAはこの期間の成果です（アーキテクチャ、データモデル、フロントエンド、API層、認証、SEO、デプロイ）。',
+'r2.t':'データリサーチャー','r2.p':'多様なソースからデータを収集・整備・検証し、プロダクトチームが判断に使うレポートにまとめました。数字が正しいかどうかに責任を持った2年間です。',
+'r3.t':'オペレーション担当','r3.p':'大量処理の現場での業務遂行とレポーティング。',
+'r4.t':'リサーチ・オペレーション','r4.p':'クライアント向け調査と、その周辺の実務。BotaveilとVSATのウェブサイト構築、BotaveilのAmazon・Flipkart店舗の運営、商品カタログ整備、物流調整を担当しました。',
+'c.front':'フロントエンド','c.back':'バックエンド・データ','c.schema':'スキーマ設計','c.edu':'学歴','c.eduv':'M.Tech、Malla Reddy University（社会人課程、2026年〜）<br>B.Tech 情報工学、2019〜2023年',
+'note.b':'正直に申し上げると：','note.t':'どちらのプロダクトもTypeScriptではなくJavaScriptで、AWSの実務経験はありません。TypeScriptは現在学習中です。面接で分かるより、ここでお伝えしておきたいと思います。',
+'pf.up':'フリーランスのプロフィール','pf.cr':'認証済みの資格',
+'ct.h':'エンジニアリング・データ・オペレーションの採用担当の方へ','ct.p':'即日就業可能です。ハイデラバード、インド国内の他地域、またはリモート。どちらのコードベースも公開中で、ご希望があれば喜んでご説明します。'
+},
+hi:{
+'ui.search':'खोजें','ui.open':'खोलें','ui.copy':'कॉपी','ui.now':'अभी','ui.press':'दबाएँ','ui.nav':'नेविगेट','ui.open2':'खोलें','ui.close':'बंद करें',
+'route.origin':'मूल स्थान','route.dest':'गंतव्य बाज़ार','route.pick':'बाज़ार और भाषा चुनें',
+'hero.h':'मैं ऐसे सिस्टम बनाता हूँ जो चीज़ों को <em>सीमाओं के पार</em> ले जाते हैं और उन्हें खोजने योग्य बनाते हैं।',
+'hero.sub':'इनमें से दो लाइव हैं और दोनों मैंने अकेले बनाए: एक B2B प्लेटफ़ॉर्म जो भारतीय फ़ैक्टरियों से विदेशी गोदामों तक माल पहुँचाता है, और 22 MBA विषयों में 1,000+ AI टूल्स की एक इंडेक्स।',
+'s.base':'स्थान','s.avail':'उपलब्धता','s.availv':'तत्काल','s.stack':'तकनीक','s.mode':'कार्य प्रणाली','s.modev':'ऑन-साइट · हाइब्रिड · रिमोट',
+'sec.cons':'उत्पाद — लाइव','sec.cap':'क्षमताएँ — छाँटें','sec.rec':'अनुभव','sec.pf':'प्रोफ़ाइल','sec.ct':'संपर्क',
+'iu.what':'भारत से एंड-टू-एंड सोर्सिंग — पूछताछ से डिलीवरी तक',
+'iu.p1':'विदेश में बैठा खरीदार किसी उत्पाद का विवरण देता है। IndiaUnbox भारतीय निर्माताओं को ढूँढ़कर सत्यापित करता है, फिर सैंपलिंग, फ़ैक्टरी ऑडिट, उत्पादन, निरीक्षण, अनुपालन और डिलीवरी संभालता है।',
+'iu.p2':'मुश्किल हिस्सा कैटलॉग नहीं, भरोसा और स्थिति है। हर ऑर्डर दस जाँचने योग्य चरणों से गुज़रता है, और यह सब उस व्यक्ति के लिए भी स्पष्ट रहना चाहिए जो फ़ैक्टरी नहीं जा सकता।',
+'iu.k1':'प्रक्रिया','iu.v1':'ब्रीफ़ से डिलीवरी तक 10 ट्रैक किए गए चरण','iu.k2':'कवरेज','iu.v2':'16 विनिर्माण क्लस्टर, 5 निर्यात बंदरगाह','iu.k3':'सत्यापन','iu.v3':'हर सप्लायर की मैन्युअल जाँच, हर ब्रीफ़ पर NDA','iu.k4':'यह भी बनाया','iu.v4':'मार्केटप्लेस, बायर डैशबोर्ड, AI सोर्सिंग असिस्टेंट',
+'sm.what':'MBA समुदाय के लिए AI टूल्स की इंडेक्स',
+'sm.p1':'AI टूल्स इतने हैं कि कोई भी सबका मूल्यांकन नहीं कर सकता। SkilledMBA उन्हें चुनकर उन विषयों, कौशलों और भूमिकाओं से जोड़ता है जिनके वे काम आते हैं — ताकि फ़ाइनेंस के छात्र और HR प्रमुख को अलग-अलग, सही उत्तर मिलें।',
+'sm.p2':'जिस काम से मैं सबसे संतुष्ट हूँ वह है वर्गीकरण — श्रेणियाँ इस आधार पर बनीं कि लोग कैसे खोजते हैं, न कि टूल्स खुद को कैसे बताते हैं। राउटिंग और स्कीमा उसी से तय होते हैं।',
+'sm.k1':'कैटलॉग','sm.v1':'1,000+ टूल्स, 22 MBA विषय, साप्ताहिक अपडेट','sm.k2':'खोज','sm.v2':'सर्च के साथ विषय, भूमिका और कौशल फ़िल्टर','sm.k3':'अकाउंट','sm.v3':'सदस्यों के लिए लिस्टिंग, Free / Pro / Team','sm.k4':'यह भी बनाया','sm.v4':'ब्लॉग, श्रेणी पेज, SEO संरचना',
+'cap.h':'इसे वैसे खोजिए जैसे कोई कैटलॉग खोजते हैं।','cap.p':'दोनों उत्पाद एक ही काम करते हैं: ढेरों विकल्पों में से सही विकल्प खोजने योग्य बनाना। यह इंडेक्स भी वैसे ही काम करती है। इंजीनियरिंग के बजाय ऑपरेशंस के लिए भर्ती कर रहे हैं? उसी से छाँटिए।','cap.search':'क्षमताएँ खोजें',
+'rec.h':'मैं डेटा के रास्ते प्रोडक्ट बनाने तक पहुँचा।',
+'r1.t':'स्वतंत्र वेब डेवलपर','r1.o':'स्व-नियोजित · हैदराबाद','r1.p':'शुरू से अंत तक उत्पादों की डिज़ाइन, निर्माण और लॉन्चिंग। IndiaUnbox और SkilledMBA इसी काम से निकले — आर्किटेक्चर, डेटा मॉडल, फ्रंट एंड, API लेयर, ऑथ, SEO और डिप्लॉयमेंट।',
+'r2.t':'डेटा रिसर्चर','r2.p':'कई स्रोतों से डेटा जुटाया, साफ़ किया और सत्यापित किया, फिर उसे ऐसी रिपोर्ट में बदला जिन पर प्रोडक्ट टीमों ने निर्णय लिए। दो साल इस ज़िम्मेदारी के साथ कि कोई आँकड़ा सही है या नहीं।',
+'r3.t':'ऑपरेशंस एग्ज़ीक्यूटिव','r3.p':'उच्च-मात्रा वाले वातावरण में प्रक्रिया निष्पादन और रिपोर्टिंग।',
+'r4.t':'रिसर्च और ऑपरेशंस','r4.p':'क्लाइंट रिसर्च प्रोजेक्ट और उनके इर्द-गिर्द का व्यावहारिक काम: Botaveil और VSAT की वेबसाइटें बनाईं, Botaveil के Amazon और Flipkart स्टोर संभाले, उत्पाद कैटलॉग किए और लॉजिस्टिक्स समन्वय किया।',
+'c.front':'फ्रंट एंड','c.back':'बैक एंड और डेटा','c.schema':'स्कीमा डिज़ाइन','c.edu':'शिक्षा','c.eduv':'M.Tech, मल्ला रेड्डी यूनिवर्सिटी (अंशकालिक, 2026—)<br>B.Tech कंप्यूटर साइंस, 2019—2023',
+'note.b':'साफ़ कहूँ तो:','note.t':'दोनों उत्पाद TypeScript नहीं, JavaScript में हैं, और मैंने AWS पर काम नहीं किया है। TypeScript अभी सीख रहा हूँ। यह आपको इंटरव्यू में पता चलने से बेहतर है कि यहीं बता दूँ।',
+'pf.up':'फ्रीलांस प्रोफ़ाइल','pf.cr':'सत्यापित प्रमाणपत्र',
+'ct.h':'इंजीनियरिंग, डेटा या ऑपरेशंस के लिए भर्ती कर रहे हैं?','ct.p':'तत्काल उपलब्ध — हैдराबाद, भारत में कहीं और, या रिमोट। दोनों कोडबेस लाइव हैं और मैं खुशी से आपको दिखा सकता हूँ।'
+}};
+/* finder data, translated per language */
+var FD={
+en:{cats:['All','Engineering','E-commerce','Operations','Research','Shipped'],items:[
+['Engineering','Next.js & React applications','Two production apps designed and shipped solo.'],
+['Engineering','MySQL schema design','Data models behind both products.'],
+['Engineering','API routes and authentication','Server endpoints, login and member-gated content.'],
+['Engineering','Search, filtering and taxonomy','Category structures built around how people search.'],
+['Engineering','SEO and Core Web Vitals','Rendering, images and structure so heavy pages load fast.'],
+['E-commerce','Amazon storefront','Ran Botaveil’s Amazon listings and product pages.'],
+['E-commerce','Flipkart storefront','The same for Flipkart, kept consistent across channels.'],
+['E-commerce','Product cataloguing','Built and uploaded product data in bulk, kept accurate.'],
+['Operations','Logistics and fulfilment','Coordinated shipping at VSAT — the ground IndiaUnbox now covers.'],
+['Operations','Supplier sourcing workflows','Designed IndiaUnbox’s ten-stage pipeline.'],
+['Operations','Process and reporting','High-volume operations at Startek India.'],
+['Research','Data sourcing and validation','Two years at Collegedunia on multi-source data.'],
+['Research','Market and sector research','Client research engagements at VSAT Analytics.'],
+['Shipped','IndiaUnbox','B2B sourcing platform. Live.'],
+['Shipped','SkilledMBA','1,000+ AI tools across 22 subjects. Live.'],
+['Shipped','Botaveil & VSAT sites','Built and maintained both company websites.']]},
+de:{cats:['Alle','Engineering','E-Commerce','Operations','Research','Live'],items:[
+['Engineering','Next.js- & React-Anwendungen','Zwei Produktiv-Apps allein entworfen und ausgeliefert.'],
+['Engineering','MySQL-Schema-Design','Die Datenmodelle hinter beiden Produkten.'],
+['Engineering','API-Routen und Authentifizierung','Server-Endpunkte, Login und Inhalte nur für Mitglieder.'],
+['Engineering','Suche, Filter und Taxonomie','Kategorien, die sich danach richten, wie Menschen suchen.'],
+['Engineering','SEO und Core Web Vitals','Rendering, Bilder und Struktur für schnelle, inhaltsreiche Seiten.'],
+['E-Commerce','Amazon-Shop','Betreute Listings und Produktseiten von Botaveil bei Amazon.'],
+['E-Commerce','Flipkart-Shop','Dasselbe für Flipkart, kanalübergreifend konsistent.'],
+['E-Commerce','Produktkatalogisierung','Produktdaten in großer Menge angelegt und gepflegt.'],
+['Operations','Logistik und Versand','Versand bei VSAT koordiniert — das Feld, das IndiaUnbox heute abdeckt.'],
+['Operations','Lieferanten-Workflows','Den zehnstufigen Ablauf von IndiaUnbox entworfen.'],
+['Operations','Prozesse und Reporting','Operations mit hohem Volumen bei Startek India.'],
+['Research','Datenbeschaffung und Validierung','Zwei Jahre bei Collegedunia mit Daten aus vielen Quellen.'],
+['Research','Markt- und Branchenresearch','Kundenprojekte bei VSAT Analytics.'],
+['Live','IndiaUnbox','B2B-Beschaffungsplattform. Live.'],
+['Live','SkilledMBA','Über 1.000 KI-Tools, 22 Fächer. Live.'],
+['Live','Botaveil- & VSAT-Websites','Beide Unternehmensseiten gebaut und gepflegt.']]},
+fr:{cats:['Tout','Ingénierie','E-commerce','Opérations','Recherche','En ligne'],items:[
+['Ingénierie','Applications Next.js et React','Deux applications en production, conçues et livrées seul.'],
+['Ingénierie','Conception de schémas MySQL','Les modèles de données des deux produits.'],
+['Ingénierie','Routes API et authentification','Points d’accès serveur, connexion et contenus réservés aux membres.'],
+['Ingénierie','Recherche, filtres et taxonomie','Des catégories bâties selon la façon dont les gens cherchent.'],
+['Ingénierie','SEO et Core Web Vitals','Rendu, images et structure pour des pages riches et rapides.'],
+['E-commerce','Boutique Amazon','Gestion des fiches et pages produits de Botaveil sur Amazon.'],
+['E-commerce','Boutique Flipkart','Idem sur Flipkart, en cohérence entre les canaux.'],
+['E-commerce','Catalogage produits','Données produits créées en masse et tenues à jour.'],
+['Opérations','Logistique et expédition','Coordination des expéditions chez VSAT — le terrain que couvre IndiaUnbox.'],
+['Opérations','Flux fournisseurs','Conception du processus en dix étapes d’IndiaUnbox.'],
+['Opérations','Processus et reporting','Opérations à fort volume chez Startek India.'],
+['Recherche','Collecte et validation de données','Deux ans chez Collegedunia sur des données multi-sources.'],
+['Recherche','Études de marché et sectorielles','Missions clients chez VSAT Analytics.'],
+['En ligne','IndiaUnbox','Plateforme de sourcing B2B. En ligne.'],
+['En ligne','SkilledMBA','Plus de 1 000 outils d’IA, 22 matières. En ligne.'],
+['En ligne','Sites Botaveil et VSAT','Création et maintenance des deux sites.']]},
+es:{cats:['Todo','Ingeniería','E-commerce','Operaciones','Investigación','En vivo'],items:[
+['Ingeniería','Aplicaciones Next.js y React','Dos apps en producción, diseñadas y lanzadas en solitario.'],
+['Ingeniería','Diseño de esquemas MySQL','Los modelos de datos detrás de ambos productos.'],
+['Ingeniería','Rutas de API y autenticación','Endpoints, inicio de sesión y contenido para miembros.'],
+['Ingeniería','Búsqueda, filtros y taxonomía','Categorías construidas según cómo busca la gente.'],
+['Ingeniería','SEO y Core Web Vitals','Renderizado, imágenes y estructura para páginas densas y rápidas.'],
+['E-commerce','Tienda en Amazon','Gestioné las fichas y páginas de producto de Botaveil.'],
+['E-commerce','Tienda en Flipkart','Lo mismo en Flipkart, con coherencia entre canales.'],
+['E-commerce','Catalogación de productos','Datos de producto creados en volumen y mantenidos al día.'],
+['Operaciones','Logística y envíos','Coordiné envíos en VSAT — el terreno que hoy cubre IndiaUnbox.'],
+['Operaciones','Flujos con proveedores','Diseñé el proceso de diez etapas de IndiaUnbox.'],
+['Operaciones','Procesos y reporting','Operaciones de alto volumen en Startek India.'],
+['Investigación','Obtención y validación de datos','Dos años en Collegedunia con datos de múltiples fuentes.'],
+['Investigación','Investigación de mercado y sector','Proyectos para clientes en VSAT Analytics.'],
+['En vivo','IndiaUnbox','Plataforma de sourcing B2B. En vivo.'],
+['En vivo','SkilledMBA','Más de 1.000 herramientas de IA, 22 materias. En vivo.'],
+['En vivo','Sitios de Botaveil y VSAT','Construí y mantuve ambos sitios.']]},
+pt:{cats:['Tudo','Engenharia','E-commerce','Operações','Pesquisa','No ar'],items:[
+['Engenharia','Aplicações Next.js e React','Duas apps em produção, criadas e lançadas sozinho.'],
+['Engenharia','Modelagem de esquema MySQL','Os modelos de dados dos dois produtos.'],
+['Engenharia','Rotas de API e autenticação','Endpoints, login e conteúdo restrito a membros.'],
+['Engenharia','Busca, filtros e taxonomia','Categorias construídas conforme as pessoas buscam.'],
+['Engenharia','SEO e Core Web Vitals','Renderização, imagens e estrutura para páginas densas e rápidas.'],
+['E-commerce','Loja na Amazon','Cuidei dos anúncios e páginas de produto da Botaveil.'],
+['E-commerce','Loja no Flipkart','O mesmo no Flipkart, consistente entre canais.'],
+['E-commerce','Catalogação de produtos','Dados de produto criados em volume e mantidos corretos.'],
+['Operações','Logística e expedição','Coordenei envios na VSAT — o terreno que a IndiaUnbox cobre hoje.'],
+['Operações','Fluxos com fornecedores','Desenhei o processo de dez etapas da IndiaUnbox.'],
+['Operações','Processos e relatórios','Operações de alto volume na Startek India.'],
+['Pesquisa','Coleta e validação de dados','Dois anos na Collegedunia com dados de várias fontes.'],
+['Pesquisa','Pesquisa de mercado e setor','Projetos para clientes na VSAT Analytics.'],
+['No ar','IndiaUnbox','Plataforma de sourcing B2B. No ar.'],
+['No ar','SkilledMBA','Mais de 1.000 ferramentas de IA, 22 disciplinas. No ar.'],
+['No ar','Sites Botaveil e VSAT','Construí e mantive os dois sites.']]},
+ja:{cats:['すべて','エンジニアリング','EC','オペレーション','リサーチ','公開中'],items:[
+['エンジニアリング','Next.js・Reactアプリケーション','本番稼働の2プロダクトを一人で設計・公開。'],
+['エンジニアリング','MySQLスキーマ設計','両プロダクトを支えるデータモデル。'],
+['エンジニアリング','APIルートと認証','サーバーエンドポイント、ログイン、会員限定コンテンツ。'],
+['エンジニアリング','検索・絞り込み・分類設計','人がどう探すかを軸にしたカテゴリー構造。'],
+['エンジニアリング','SEOとCore Web Vitals','重いページでも速く表示するためのレンダリングと構造。'],
+['EC','Amazonストア運営','Botaveilの商品ページと出品を担当。'],
+['EC','Flipkartストア運営','Flipkartでも同様に、チャネル間で一貫性を維持。'],
+['EC','商品カタログ整備','大量の商品データを作成し、正確に維持。'],
+['オペレーション','物流・出荷','VSATで出荷を調整。IndiaUnboxが今カバーする領域。'],
+['オペレーション','サプライヤー調達フロー','IndiaUnboxの10工程の設計。'],
+['オペレーション','業務遂行とレポーティング','Startek Indiaでの大量処理業務。'],
+['リサーチ','データ収集と検証','Collegeduniaで2年間、多様なデータを担当。'],
+['リサーチ','市場・業界調査','VSAT Analyticsでのクライアント調査。'],
+['公開中','IndiaUnbox','BtoB調達プラットフォーム。公開中。'],
+['公開中','SkilledMBA','22科目、1,000以上のAIツール。公開中。'],
+['公開中','BotaveilとVSATのサイト','両社のウェブサイトを構築・運用。']]},
+hi:{cats:['सभी','इंजीनियरिंग','ई-कॉमर्स','ऑपरेशंस','रिसर्च','लाइव'],items:[
+['इंजीनियरिंग','Next.js और React ऐप्लिकेशन','दो प्रोडक्शन ऐप अकेले डिज़ाइन कर लॉन्च किए।'],
+['इंजीनियरिंग','MySQL स्कीमा डिज़ाइन','दोनों उत्पादों के पीछे के डेटा मॉडल।'],
+['इंजीनियरिंग','API रूट और ऑथेंटिकेशन','सर्वर एंडपॉइंट, लॉगिन और सदस्य-सीमित सामग्री।'],
+['इंजीनियरिंग','सर्च, फ़िल्टर और वर्गीकरण','श्रेणियाँ इस आधार पर कि लोग कैसे खोजते हैं।'],
+['इंजीनियरिंग','SEO और Core Web Vitals','रेंडरिंग, इमेज और संरचना ताकि भारी पेज तेज़ खुलें।'],
+['ई-कॉमर्स','Amazon स्टोर','Botaveil की Amazon लिस्टिंग और प्रोडक्ट पेज संभाले।'],
+['ई-कॉमर्स','Flipkart स्टोर','Flipkart पर भी वही, चैनलों में एकरूपता के साथ।'],
+['ई-कॉमर्स','प्रोडक्ट कैटलॉगिंग','बड़ी मात्रा में प्रोडक्ट डेटा बनाया और सही बनाए रखा।'],
+['ऑपरेशंस','लॉजिस्टिक्स और शिपिंग','VSAT में शिपिंग समन्वय — वही क्षेत्र जो अब IndiaUnbox संभालता है।'],
+['ऑपरेशंस','सप्लायर सोर्सिंग प्रक्रिया','IndiaUnbox की दस-चरणीय प्रक्रिया डिज़ाइन की।'],
+['ऑपरेशंस','प्रक्रिया और रिपोर्टिंग','Startek India में उच्च-मात्रा संचालन।'],
+['रिसर्च','डेटा संग्रह और सत्यापन','Collegedunia में दो वर्ष, कई स्रोतों के डेटा पर।'],
+['रिसर्च','बाज़ार और सेक्टर रिसर्च','VSAT Analytics में क्लाइंट प्रोजेक्ट।'],
+['लाइव','IndiaUnbox','B2B सोर्सिंग प्लेटफ़ॉर्म। लाइव।'],
+['लाइव','SkilledMBA','22 विषयों में 1,000+ AI टूल्स। लाइव।'],
+['लाइव','Botaveil और VSAT साइट','दोनों कंपनी वेबसाइटें बनाईं और संभालीं।']]}};
 
-  /* ---------- toast ---------- */
-  var toastEl = document.getElementById('toast'), toastT;
-  function toast(msg){
-    toastEl.textContent = msg; toastEl.dataset.on='1';
-    clearTimeout(toastT); toastT=setTimeout(function(){ toastEl.dataset.on='0'; },1900);
-  }
+var EN={}; /* capture english defaults from DOM */
+[].forEach.call(document.querySelectorAll('[data-i]'),function(el){ EN[el.getAttribute('data-i')]=el.innerHTML; });
+T.en=EN;
 
-  /* ---------- copy email ---------- */
-  var MAIL='dadymom91@gmail.com';
-  function copyMail(){
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(MAIL).then(function(){toast('Email copied');},function(){toast(MAIL);});
-    } else { toast(MAIL); }
-  }
-  document.getElementById('copyMail').addEventListener('click', copyMail);
+var lang='en', mkt=MK[0];
+function t(k){ return (T[lang] && T[lang][k]) || EN[k] || k; }
 
-  /* ---------- scroll progress ---------- */
-  var prog=document.getElementById('prog'), ticking=false;
-  function onScroll(){
-    if(ticking) return; ticking=true;
-    requestAnimationFrame(function(){
-      var h=document.documentElement.scrollHeight-innerHeight;
-      prog.style.width=(h>0?(scrollY/h)*100:0)+'%'; ticking=false;
-    });
-  }
-  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+function applyLang(){
+  [].forEach.call(document.querySelectorAll('[data-i]'),function(el){ el.innerHTML=t(el.getAttribute('data-i')); });
+  root.setAttribute('lang', lang);
+  buildChips(); render(); buildPal();
+}
 
-  /* ---------- nav active state ---------- */
-  var links=[].slice.call(document.querySelectorAll('#nav a[href^="#"]'));
-  var secs=links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
-  if('IntersectionObserver' in window && secs.length){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(!e.isIntersecting) return;
-        links.forEach(function(a){
-          a.setAttribute('aria-current', a.getAttribute('href')==='#'+e.target.id ? 'true':'false');
-        });
-      });
-    },{rootMargin:'-45% 0px -50% 0px'});
-    secs.forEach(function(s){ io.observe(s); });
-  }
+/* ---------- destination + time ---------- */
+var sel=document.getElementById('dest'), destName=document.getElementById('destName'),
+    destTime=document.getElementById('destTime'), istime=document.getElementById('istime');
+MK.forEach(function(m,i){ var o=document.createElement('option'); o.value=m.id; o.textContent=m.n; sel.appendChild(o); });
 
-  /* ---------- counters ---------- */
-  var nums=document.getElementById('nums');
-  if(nums && 'IntersectionObserver' in window){
-    var seen=false;
-    var io2=new IntersectionObserver(function(es){
-      if(seen || !es[0].isIntersecting) return; seen=true;
-      [].forEach.call(nums.querySelectorAll('b[data-to]'), function(el){
-        var to=+el.dataset.to, suf=el.dataset.suffix||'';
-        if(reduce){ el.textContent=to.toLocaleString()+suf; return; }
-        var t0=performance.now(), dur=1100;
-        (function step(now){
-          var p=Math.min((now-t0)/dur,1);
-          var e=1-Math.pow(1-p,3);
-          el.textContent=Math.round(to*e).toLocaleString()+(p===1?suf:'');
-          if(p<1) requestAnimationFrame(step);
-        })(t0);
-      });
-    },{threshold:.35});
-    io2.observe(nums);
-  }
+function fmt(tz){ try{ return new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date()); }catch(e){ return '--:--'; } }
+function offsetMin(tz){
+  try{
+    var d=new Date();
+    var s=new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).formatToParts(d);
+    var o={}; s.forEach(function(p){o[p.type]=p.value;});
+    var asUTC=Date.UTC(+o.year,+o.month-1,+o.day,+(o.hour==='24'?'00':o.hour),+o.minute);
+    return Math.round((asUTC-d.getTime())/60000);
+  }catch(e){ return 0; }
+}
+function clock(){
+  istime.textContent='17.38°N 78.49°E · '+fmt('Asia/Kolkata')+' IST';
+  var diff=(offsetMin(mkt.tz)-offsetMin('Asia/Kolkata'))/60;
+  var sign=diff===0?'':(diff>0?'+':'−');
+  var abs=Math.abs(diff), hh=Math.floor(abs), mm=Math.round((abs-hh)*60);
+  var d=diff===0?'same time':(sign+hh+(mm?':'+(mm<10?'0':'')+mm:'')+'h');
+  destTime.textContent=fmt(mkt.tz)+' · '+(diff===0?'same time as Hyderabad':d+' vs Hyderabad');
+}
+function redraw(){
+  if(R) return;
+  var p=document.getElementById('arc'), am=document.getElementById('am');
+  if(!p) return;
+  var len=p.getTotalLength?p.getTotalLength():400;
+  p.style.setProperty('--len',len);
+  p.style.animation='none'; void p.offsetWidth; p.style.animation='';
+  if(am && am.beginElement){ try{ am.beginElement(); }catch(e){} }
+}
+sel.addEventListener('change',function(){
+  mkt=MK.filter(function(m){return m.id===this.value;}.bind(this))[0]||MK[0];
+  destName.textContent=mkt.n; lang=mkt.lang;
+  try{ localStorage.setItem('vm-mkt',mkt.id); }catch(e){}
+  applyLang(); clock(); redraw();
+});
+try{ var sv=localStorage.getItem('vm-mkt'); if(sv){ var f=MK.filter(function(m){return m.id===sv;})[0]; if(f){ mkt=f; lang=f.lang; sel.value=f.id; destName.textContent=f.n; } } }catch(e){}
+clock(); setInterval(clock,30000);
 
-  /* ---------- the finder ---------- */
-  var ITEMS=[
-    {t:'Next.js &amp; React applications',c:'Engineering',d:'Two production apps designed and shipped solo, front end through deployment.'},
-    {t:'MySQL schema design',c:'Engineering',d:'Data models behind both products, built so new categories do not mean rewriting routing.'},
-    {t:'API routes and authentication',c:'Engineering',d:'Server-side endpoints, login, and member-gated content via Next.js API routes.'},
-    {t:'Membership and access tiers',c:'Engineering',d:'Free, Pro and Team tiers with gated listings on SkilledMBA.'},
-    {t:'Search, filtering and taxonomy',c:'Engineering',d:'Category structures built around how people search, not how things describe themselves.'},
-    {t:'SEO and Core Web Vitals',c:'Engineering',d:'Rendering strategy, image handling and structure so content-heavy pages load fast and rank.'},
-    {t:'Amazon storefront management',c:'E-commerce',d:'Ran Botaveil’s Amazon presence — listings, catalogue structure, product pages.'},
-    {t:'Flipkart storefront management',c:'E-commerce',d:'Same for Flipkart, kept consistent with the Amazon catalogue.'},
-    {t:'Product cataloguing at volume',c:'E-commerce',d:'Built and uploaded product data in bulk and kept it accurate across channels.'},
-    {t:'Logistics and fulfilment',c:'Operations',d:'Coordinated shipping and fulfilment at VSAT — the ground IndiaUnbox now covers in software.'},
-    {t:'Supplier sourcing workflows',c:'Operations',d:'Designed IndiaUnbox’s ten-stage pipeline: brief, verification, sampling, audit, QC, delivery.'},
-    {t:'Process execution and reporting',c:'Operations',d:'High-volume operations environment at Startek India.'},
-    {t:'Data sourcing and validation',c:'Research',d:'Two years at Collegedunia sourcing, cleaning and validating multi-source data.'},
-    {t:'Reporting for product teams',c:'Research',d:'Turned data into reports content and product teams acted on.'},
-    {t:'Market and sector research',c:'Research',d:'Client research engagements delivered at VSAT Analytics.'},
-    {t:'IndiaUnbox',c:'Shipped',d:'B2B sourcing platform, RFQ to doorstep. Live at indiaunbox.com.'},
-    {t:'SkilledMBA',c:'Shipped',d:'Index of 1,000+ AI tools across 22 MBA subjects. Live at skilledmba.com.'},
-    {t:'Botaveil &amp; VSAT websites',c:'Shipped',d:'Built and maintained both company sites.'}
-  ];
-  var CATS=['All','Engineering','E-commerce','Operations','Research','Shipped'];
-  var curCat='All', curQ='';
-  var chipsEl=document.getElementById('chips'),
-      gridEl=document.getElementById('fgrid'),
-      countEl=document.getElementById('fcount'),
-      qEl=document.getElementById('fq');
+/* ---------- theme ---------- */
+function setT(x){ root.setAttribute('data-theme',x); try{localStorage.setItem('vm-t',x);}catch(e){}
+  var m=document.querySelector('meta[name=theme-color]'); if(m)m.setAttribute('content',x==='dark'?'#111111':'#ece8e1'); }
+document.getElementById('thm').addEventListener('click',function(){ setT(root.getAttribute('data-theme')==='dark'?'light':'dark'); });
 
-  CATS.forEach(function(c){
-    var b=document.createElement('button');
-    b.className='chip'; b.type='button'; b.textContent=c;
-    b.setAttribute('aria-pressed', c===curCat?'true':'false');
-    b.addEventListener('click',function(){
-      curCat=c;
-      [].forEach.call(chipsEl.children,function(x){ x.setAttribute('aria-pressed', x===b?'true':'false'); });
-      render();
-    });
+/* ---------- toast + copy ---------- */
+var MAIL='dadymom91@gmail.com', te=document.getElementById('toast'), tt;
+function toast(m){ te.textContent=m; te.dataset.on='1'; clearTimeout(tt); tt=setTimeout(function(){te.dataset.on='0';},1800); }
+function copyMail(){ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(MAIL).then(function(){toast(MAIL);},function(){toast(MAIL);});}else toast(MAIL); }
+document.getElementById('cpy').addEventListener('click',copyMail);
+
+/* ---------- progress ---------- */
+var pg=document.getElementById('prog'),tk=false;
+addEventListener('scroll',function(){ if(tk)return; tk=true; requestAnimationFrame(function(){
+  var h=document.documentElement.scrollHeight-innerHeight; pg.style.width=(h>0?scrollY/h*100:0)+'%'; tk=false; }); },{passive:true});
+
+/* ---------- finder ---------- */
+var cat=0, q='', chipsEl=document.getElementById('fchips'), fg=document.getElementById('fg'), fn=document.getElementById('fn'), fq=document.getElementById('fq');
+function data(){ return FD[lang]||FD.en; }
+function buildChips(){
+  chipsEl.innerHTML='';
+  data().cats.forEach(function(c,i){
+    var b=document.createElement('button'); b.className='fc'; b.type='button'; b.textContent=c;
+    b.setAttribute('aria-pressed', i===cat?'true':'false');
+    b.addEventListener('click',function(){ cat=i; buildChips(); render(); });
     chipsEl.appendChild(b);
   });
+  fq.placeholder=t('cap.search');
+}
+function render(){
+  var d=data(), s=q.trim().toLowerCase();
+  var out=d.items.filter(function(it){
+    if(cat>0 && it[0]!==d.cats[cat]) return false;
+    if(!s) return true;
+    return (it[0]+' '+it[1]+' '+it[2]).toLowerCase().indexOf(s)>-1;
+  });
+  fg.innerHTML = out.length ? out.map(function(it){
+    return '<div class="fr"><div class="fcat mono">'+it[0]+'</div><div class="ft">'+it[1]+'</div><div class="fd">'+it[2]+'</div></div>';
+  }).join('') : '<div class="fnone">—</div>';
+  fn.textContent = out.length+' / '+d.items.length;
+}
+fq.addEventListener('input',function(){ q=this.value; render(); });
 
-  function strip(s){ return s.replace(/&amp;/g,'&').replace(/’/g,"'"); }
-  function render(){
-    var q=curQ.trim().toLowerCase();
-    var out=ITEMS.filter(function(it){
-      if(curCat!=='All' && it.c!==curCat) return false;
-      if(!q) return true;
-      return (strip(it.t)+' '+it.c+' '+strip(it.d)).toLowerCase().indexOf(q)>-1;
-    });
-    gridEl.innerHTML = out.length ? out.map(function(it){
-      return '<div class="fitem"><h4>'+it.t+'</h4><p>'+it.d+'</p><span class="cat">'+it.c+'</span></div>';
-    }).join('') : '<div class="fempty">Nothing matches that. Try a broader word, or clear the filter.</div>';
-    countEl.textContent = out.length + (out.length===1?' result':' results') +
-      (curCat==='All'?'':' in '+curCat) + (q?' for “'+curQ.trim()+'”':'');
-  }
-  qEl.addEventListener('input', function(){ curQ=this.value; render(); });
-  render();
-
-  /* ---------- command palette ---------- */
-  var PAL=[
-    {g:'Go to',n:'Work',s:'IndiaUnbox and SkilledMBA',a:'#work'},
-    {g:'Go to',n:'What I build',s:'Filterable index of capabilities',a:'#build'},
-    {g:'Go to',n:'Experience',s:'Four roles, 2020 to now',a:'#experience'},
-    {g:'Go to',n:'Profiles',s:'GitHub, LinkedIn, Upwork, Credly',a:'#profiles'},
-    {g:'Go to',n:'Contact',s:'Email and availability',a:'#contact'},
-    {g:'Profiles',n:'GitHub',s:'github.com/vinnymadasu',a:'https://github.com/vinnymadasu',x:1},
-    {g:'Profiles',n:'LinkedIn',s:'in/vineeth-rao-madasu',a:'https://www.linkedin.com/in/vineeth-rao-madasu-bb46651a5',x:1},
-    {g:'Profiles',n:'Upwork',s:'Freelance profile',a:'https://www.upwork.com/freelancers/~01055b497900c5b3d9',x:1},
-    {g:'Profiles',n:'Credly',s:'Verified certifications',a:'https://www.credly.com/users/madasu-vineeth-rao',x:1},
-    {g:'Live products',n:'IndiaUnbox',s:'indiaunbox.com',a:'https://indiaunbox.com',x:1},
-    {g:'Live products',n:'SkilledMBA',s:'skilledmba.com',a:'https://skilledmba.com',x:1},
-    {g:'Actions',n:'Email Vineeth',s:MAIL,a:'mailto:'+MAIL},
-    {g:'Actions',n:'Copy email address',s:MAIL,f:copyMail},
-    {g:'Actions',n:'Toggle theme',s:'Light and dark',f:function(){ setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'); }}
+/* ---------- palette ---------- */
+var PAL=[], pal=document.getElementById('pal'), pq=document.getElementById('pq'), pr=document.getElementById('pr'), ps=0, shown=[], lastF=null;
+function buildPal(){
+  PAL=[
+    {g:'→',n:t('sec.cons').split('—')[0].trim()||'Work',s:'IndiaUnbox · SkilledMBA',a:'#work'},
+    {g:'→',n:t('sec.cap').split('—')[0].trim(),s:t('cap.search'),a:'#build'},
+    {g:'→',n:t('sec.rec'),s:'2020 — '+t('ui.now'),a:'#record'},
+    {g:'→',n:t('sec.pf'),s:'GitHub · LinkedIn · Upwork · Credly',a:'#profiles'},
+    {g:'→',n:t('sec.ct'),s:MAIL,a:'#contact'},
+    {g:'↗',n:'GitHub',s:'github.com/vinnymadasu',a:'https://github.com/vinnymadasu',x:1},
+    {g:'↗',n:'LinkedIn',s:'in/vineeth-rao-madasu',a:'https://www.linkedin.com/in/vineeth-rao-madasu-bb46651a5',x:1},
+    {g:'↗',n:'Upwork',s:t('pf.up'),a:'https://www.upwork.com/freelancers/~01055b497900c5b3d9',x:1},
+    {g:'↗',n:'Credly',s:t('pf.cr'),a:'https://www.credly.com/users/madasu-vineeth-rao',x:1},
+    {g:'↗',n:'IndiaUnbox',s:'indiaunbox.com',a:'https://indiaunbox.com',x:1},
+    {g:'↗',n:'SkilledMBA',s:'skilledmba.com',a:'https://skilledmba.com',x:1},
+    {g:'•',n:t('ui.copy')+' — '+MAIL,s:'',f:copyMail},
+    {g:'•',n:'Theme',s:'light / dark',f:function(){ setT(root.getAttribute('data-theme')==='dark'?'light':'dark'); }}
   ];
-  var pal=document.getElementById('pal'), palq=document.getElementById('palq'),
-      palres=document.getElementById('palres'), sel=0, shown=[], lastFocus=null;
-
-  function score(item,q){
-    if(!q) return 1;
-    var hay=(item.n+' '+item.s+' '+item.g).toLowerCase();
-    if(hay.indexOf(q)>-1) return 100-hay.indexOf(q);
-    var i=0,k=0; // subsequence fuzzy
-    while(i<hay.length && k<q.length){ if(hay[i]===q[k]) k++; i++; }
-    return k===q.length ? 10 : 0;
-  }
-  function paint(){
-    var q=palq.value.trim().toLowerCase();
-    shown=PAL.map(function(it){ return {it:it,sc:score(it,q)}; })
-             .filter(function(r){ return r.sc>0; })
-             .sort(function(a,b){ return b.sc-a.sc; })
-             .map(function(r){ return r.it; });
-    if(sel>=shown.length) sel=0;
-    if(!shown.length){ palres.innerHTML='<div class="palnone">No matches.</div>'; return; }
-    var html='', lastG=null;
-    shown.forEach(function(it,i){
-      if(it.g!==lastG){ html+='<div class="palgrp">'+it.g+'</div>'; lastG=it.g; }
-      var ic = it.x?'↗':(it.f?'•':'#');
-      html+='<a class="palit" href="'+(it.a||'#')+'" data-i="'+i+'" data-sel="'+(i===sel?1:0)+'"'+
-            (it.x?' target="_blank" rel="noopener"':'')+'>'+
-            '<span class="ic">'+ic+'</span><span class="t">'+it.n+'<span class="s">'+it.s+'</span></span></a>';
-    });
-    palres.innerHTML=html;
-    var cur=palres.querySelector('[data-sel="1"]');
-    if(cur && cur.scrollIntoView) cur.scrollIntoView({block:'nearest'});
-  }
-  function openPal(){
-    lastFocus=document.activeElement;
-    pal.setAttribute('open',''); palq.value=''; sel=0; paint();
-    setTimeout(function(){ palq.focus(); },30);
-  }
-  function closePal(){
-    pal.removeAttribute('open');
-    if(lastFocus && lastFocus.focus) lastFocus.focus();
-  }
-  function run(it){
-    if(!it) return;
-    if(it.f){ closePal(); it.f(); return; }
-    if(it.x){ window.open(it.a,'_blank','noopener'); closePal(); return; }
-    closePal();
-    if(it.a && it.a.charAt(0)==='#'){
-      var el=document.querySelector(it.a);
-      if(el) el.scrollIntoView({behavior: reduce?'auto':'smooth', block:'start'});
-    } else if(it.a){ location.href=it.a; }
-  }
-  document.getElementById('openPal').addEventListener('click', openPal);
-  palq.addEventListener('input', function(){ sel=0; paint(); });
-  palres.addEventListener('click', function(e){
-    var a=e.target.closest('.palit'); if(!a) return;
-    e.preventDefault(); run(shown[+a.dataset.i]);
+  MK.forEach(function(m){ PAL.push({g:'⌖',n:m.n,s:m.lang.toUpperCase()+' · '+m.tz,f:function(){ sel.value=m.id; sel.dispatchEvent(new Event('change')); }}); });
+}
+function sc(it,s){ if(!s) return 1; var h=(it.n+' '+it.s).toLowerCase(); if(h.indexOf(s)>-1) return 100-h.indexOf(s);
+  var i=0,k=0; while(i<h.length&&k<s.length){ if(h[i]===s[k])k++; i++; } return k===s.length?10:0; }
+function paint(){
+  var s=pq.value.trim().toLowerCase();
+  shown=PAL.map(function(it){return{it:it,v:sc(it,s)};}).filter(function(r){return r.v>0;}).sort(function(a,b){return b.v-a.v;}).map(function(r){return r.it;});
+  if(ps>=shown.length) ps=0;
+  if(!shown.length){ pr.innerHTML='<div class="pnone">—</div>'; return; }
+  var h='',lg=null;
+  shown.forEach(function(it,i){
+    if(it.g!==lg){ h+='<div class="pgp mono">'+it.g+'</div>'; lg=it.g; }
+    h+='<a class="pi" href="'+(it.a||'#')+'" data-i2="'+i+'" data-s="'+(i===ps?1:0)+'"'+(it.x?' target="_blank" rel="noopener"':'')+
+       '><span class="pic">'+(it.x?'↗':(it.f?'•':'#'))+'</span><span class="pt">'+it.n+(it.s?'<span class="ps">'+it.s+'</span>':'')+'</span></a>';
   });
-  pal.addEventListener('click', function(e){ if(e.target.hasAttribute('data-close')) closePal(); });
+  pr.innerHTML=h;
+  var c=pr.querySelector('[data-s="1"]'); if(c&&c.scrollIntoView)c.scrollIntoView({block:'nearest'});
+}
+function openP(){ lastF=document.activeElement; pal.setAttribute('open',''); pq.value=''; ps=0; paint(); setTimeout(function(){pq.focus();},30); }
+function closeP(){ pal.removeAttribute('open'); if(lastF&&lastF.focus)lastF.focus(); }
+function run(it){ if(!it)return;
+  if(it.f){ closeP(); it.f(); return; }
+  if(it.x){ window.open(it.a,'_blank','noopener'); closeP(); return; }
+  closeP(); var e=document.querySelector(it.a); if(e)e.scrollIntoView({behavior:R?'auto':'smooth'}); }
+document.getElementById('opal').addEventListener('click',openP);
+pq.addEventListener('input',function(){ ps=0; paint(); });
+pr.addEventListener('click',function(e){ var a=e.target.closest('.pi'); if(!a)return; e.preventDefault(); run(shown[+a.dataset.i2]); });
+pal.addEventListener('click',function(e){ if(e.target.hasAttribute('data-cl'))closeP(); });
+addEventListener('keydown',function(e){
+  var k=e.key.toLowerCase();
+  if((e.metaKey||e.ctrlKey)&&k==='k'){ e.preventDefault(); pal.hasAttribute('open')?closeP():openP(); return; }
+  if(!pal.hasAttribute('open'))return;
+  if(k==='escape'){e.preventDefault();closeP();}
+  else if(e.key==='ArrowDown'){e.preventDefault();ps=Math.min(ps+1,shown.length-1);paint();}
+  else if(e.key==='ArrowUp'){e.preventDefault();ps=Math.max(ps-1,0);paint();}
+  else if(e.key==='Enter'){e.preventDefault();run(shown[ps]);}
+});
 
-  addEventListener('keydown', function(e){
-    var k=e.key.toLowerCase();
-    if((e.metaKey||e.ctrlKey) && k==='k'){ e.preventDefault(); pal.hasAttribute('open')?closePal():openPal(); return; }
-    if(k==='/' && !/^(input|textarea|select)$/i.test(document.activeElement.tagName) && !pal.hasAttribute('open')){
-      e.preventDefault(); openPal(); return;
-    }
-    if(!pal.hasAttribute('open')) return;
-    if(k==='escape'){ e.preventDefault(); closePal(); }
-    else if(e.key==='ArrowDown'){ e.preventDefault(); sel=Math.min(sel+1,shown.length-1); paint(); }
-    else if(e.key==='ArrowUp'){ e.preventDefault(); sel=Math.max(sel-1,0); paint(); }
-    else if(e.key==='Enter'){ e.preventDefault(); run(shown[sel]); }
-    else if(e.key==='Tab'){ e.preventDefault(); palq.focus(); }
-  });
+applyLang(); clock(); setTimeout(redraw,120);
 })();
 </script>
 </body>
