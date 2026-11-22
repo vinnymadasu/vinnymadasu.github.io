@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vineeth Rao Madasu — Full-stack developer, Hyderabad</title>
+<meta name="description" content="Full-stack developer in Hyderabad. Built and shipped IndiaUnbox, a B2B India sourcing platform, and SkilledMBA, an index of 1,000+ AI tools. Next.js, React, MySQL.">
+<meta property="og:title" content="Vineeth Rao Madasu — Full-stack developer">
+<meta property="og:description" content="Two live products, both built alone. Next.js, React, MySQL.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a1a17'/><text x='16' y='23' font-family='Helvetica,sans-serif' font-size='18' font-weight='bold' fill='%23f4f3ef' text-anchor='middle'>V</text></svg>">
+<style>
+:root{
+  --paper:#f4f3ef;
+  --paper-2:#eceae3;
+  --ink:#1a1a17;
+  --ink-soft:#33332e;
+  --mute:#74736c;
+  --rule:#dcdad2;
+  --rule-dark:#3a3a34;
+  --onink:#edebe4;
+  --onink-mute:#9b9a92;
+  --live:#3f9b5a;
+  --pad:clamp(20px,5vw,64px);
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"DM Sans",ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.shell{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* ============ top bar ============ */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(244,243,239,.88);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.topbar .shell{display:flex;align-items:center;justify-content:space-between;gap:20px;height:58px}
+.sig{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
+.topnav{display:flex;align-items:center;gap:22px;font-size:14.5px;color:var(--mute)}
+.topnav a{text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.topnav a:hover,.topnav a:focus-visible{color:var(--ink);border-bottom-color:var(--ink)}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:14px;color:var(--ink)}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--live);flex:none;box-shadow:0 0 0 0 rgba(63,155,90,.55);animation:ping 2.6s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(63,155,90,.5)}70%{box-shadow:0 0 0 9px rgba(63,155,90,0)}100%{box-shadow:0 0 0 0 rgba(63,155,90,0)}}
+@media(max-width:760px){.topnav .hideSm{display:none}}
+
+/* ============ hero ============ */
+.hero{padding:clamp(56px,10vw,118px) 0 clamp(44px,7vw,78px)}
+.hero h1{
+  font-family:"Archivo Black","Archivo",Impact,sans-serif;font-weight:400;
+  font-size:clamp(38px,6.5vw,86px);line-height:.98;letter-spacing:-.035em;
+}
+.hero h1 span{display:block}
+.hero h1 .l2{color:#8a897f}
+.hero .intro{
+  margin-top:clamp(24px,3.4vw,38px);font-size:clamp(17px,1.65vw,20.5px);
+  line-height:1.58;max-width:60ch;color:var(--ink-soft);
+}
+.hero .intro b{font-weight:700;color:var(--ink)}
+.facts{
+  display:flex;flex-wrap:wrap;gap:0 34px;margin-top:clamp(28px,4vw,46px);
+  padding-top:22px;border-top:1px solid var(--rule);
+  font-size:14.5px;color:var(--mute);
+}
+.facts div{padding:5px 0}
+.facts b{display:block;color:var(--ink);font-weight:500;font-size:15.5px}
+
+/* page-load sequence */
+.rise{opacity:0;transform:translateY(14px);animation:rise .85s cubic-bezier(.22,.61,.36,1) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.31s}.d4{animation-delay:.44s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ============ plates ============ */
+.plate{background:var(--ink);color:var(--onink)}
+.plate h2,.plate h3{color:var(--onink)}
+.sec{padding:clamp(64px,9vw,118px) 0}
+.kicker{
+  font-size:14px;color:var(--mute);margin-bottom:14px;
+  display:flex;align-items:center;gap:10px;
+}
+.plate .kicker{color:var(--onink-mute)}
+.kicker::after{content:"";height:1px;flex:1;background:var(--rule)}
+.plate .kicker::after{background:var(--rule-dark)}
+
+h2{
+  font-family:"Archivo",sans-serif;font-weight:700;
+  font-size:clamp(29px,4.4vw,52px);line-height:1.04;letter-spacing:-.028em;
+}
+
+/* ============ project ============ */
+.phead{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;margin-bottom:clamp(22px,3vw,34px);
+}
+.pbody{display:grid;grid-template-columns:1fr;gap:clamp(26px,3.6vw,52px);margin-top:clamp(28px,3.6vw,46px)}
+@media(min-width:880px){.pbody{grid-template-columns:1.04fr .96fr;align-items:start}}
+.frame{
+  border-radius:10px;overflow:hidden;background:#fff;
+  box-shadow:0 1px 0 rgba(0,0,0,.05),0 26px 56px -22px rgba(0,0,0,.42);
+}
+.plate .frame{box-shadow:0 26px 60px -20px rgba(0,0,0,.72)}
+.chrome{
+  display:flex;align-items:center;gap:7px;padding:9px 13px;
+  background:#e9e7e1;border-bottom:1px solid #d7d4cc;
+}
+.chrome i{width:9px;height:9px;border-radius:50%;background:#c6c3ba;display:block;flex:none}
+.chrome span{
+  margin-left:7px;font-size:11.5px;color:#7b786f;
+  background:#f6f5f1;border-radius:4px;padding:3px 10px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.proj h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(25px,3.1vw,36px);letter-spacing:-.025em;line-height:1.1}
+.what{margin-top:7px;font-size:15.5px;color:var(--mute)}
+.plate .what{color:var(--onink-mute)}
+p.body{margin-top:18px;max-width:56ch;color:var(--ink-soft)}
+.plate p.body{color:#c9c7bf}
+p.body + p.body{margin-top:1.05em}
+
+.specs{list-style:none;margin-top:24px;border-top:1px solid var(--rule)}
+.plate .specs{border-top-color:var(--rule-dark)}
+.specs li{
+  display:grid;grid-template-columns:142px 1fr;gap:16px;
+  padding:11px 0;border-bottom:1px solid var(--rule);font-size:15px;
+}
+.plate .specs li{border-bottom-color:var(--rule-dark)}
+.specs li>span:first-child{color:var(--mute)}
+.plate .specs li>span:first-child{color:var(--onink-mute)}
+@media(max-width:560px){.specs li{grid-template-columns:1fr;gap:2px}}
+
+.visit{
+  display:inline-block;margin-top:26px;font-size:15.5px;font-weight:500;
+  text-decoration:none;padding-bottom:3px;border-bottom:2px solid currentColor;
+}
+.visit:hover{opacity:.62}
+
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}
+.tag{font-size:13px;padding:5px 11px;border:1px solid var(--rule);border-radius:100px;color:var(--mute)}
+.plate .tag{border-color:var(--rule-dark);color:var(--onink-mute)}
+
+/* ============ numbers ============ */
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:760px){.nums{grid-template-columns:repeat(4,1fr)}}
+.num{background:var(--paper);padding:26px 22px}
+.num b{
+  display:block;font-family:"Archivo Black","Archivo",sans-serif;font-weight:400;
+  font-size:clamp(30px,4.2vw,46px);letter-spacing:-.035em;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.num span{display:block;margin-top:9px;font-size:14px;color:var(--mute);line-height:1.4}
+
+/* ============ experience ============ */
+.role{
+  display:grid;grid-template-columns:1fr;gap:3px;
+  padding:24px 0;border-bottom:1px solid var(--rule);
+}
+@media(min-width:760px){.role{grid-template-columns:200px 1fr;gap:30px;align-items:baseline}}
+.role:last-of-type{border-bottom:0}
+.role .yr{font-size:14.5px;color:var(--mute);font-variant-numeric:tabular-nums}
+.role h4{font-family:"Archivo",sans-serif;font-size:19px;font-weight:700;letter-spacing:-.015em}
+.role .org{font-size:15px;color:var(--mute);margin-top:2px}
+.role p{margin-top:9px;font-size:15.5px;color:var(--ink-soft);max-width:56ch}
+.plate .role{border-bottom-color:var(--rule-dark)}
+.plate .role .yr,.plate .role .org{color:var(--onink-mute)}
+.plate .role p{color:#c5c3bb}
+
+/* ============ stack ============ */
+.cols{display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:720px){.cols{grid-template-columns:repeat(3,1fr);gap:40px}}
+.col h5{font-size:14px;font-weight:500;color:var(--onink-mute);margin-bottom:11px}
+.col p{font-size:16px;line-height:1.85;color:var(--onink)}
+.plainly{
+  margin-top:clamp(32px,4vw,46px);padding:22px 24px;
+  border:1px solid var(--rule-dark);border-radius:8px;
+  max-width:70ch;font-size:15.5px;color:#c9c7bf;
+}
+.plainly b{color:var(--onink);font-weight:500}
+
+/* ============ contact ============ */
+.contact p.lead{font-size:clamp(17px,1.6vw,19px);color:var(--ink-soft);max-width:48ch;margin-top:16px}
+.mailto{
+  display:inline-block;margin-top:30px;
+  font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(24px,4.4vw,46px);line-height:1.1;
+  text-decoration:none;border-bottom:3px solid var(--ink);padding-bottom:4px;
+  word-break:break-word;
+}
+.mailto:hover{opacity:.6}
+.elsewhere{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.elsewhere a{
+  font-size:15px;text-decoration:none;padding:9px 16px;
+  border:1px solid var(--rule);border-radius:100px;color:var(--ink-soft);
+}
+.elsewhere a:hover{border-color:var(--ink);color:var(--ink)}
+
+footer{border-top:1px solid var(--rule);padding:26px 0 40px;font-size:13.5px;color:var(--mute)}
+footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+.plate :focus-visible{outline-color:var(--onink)}
+@media(prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;animation:none}
+  .pulse{animation:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="shell">
+    <div class="sig">Vineeth Rao Madasu</div>
+    <nav class="topnav">
+      <a href="#work" class="hideSm">Work</a>
+      <a href="#experience" class="hideSm">Experience</a>
+      <a href="#contact">Contact</a>
+      <span class="status"><i class="pulse"></i>Available</span>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="shell">
+    <h1 class="rise d1"><span>Thousands of options.</span><span class="l2">One right answer.</span></h1>
+    <p class="intro rise d2">
+      I build the systems that get people from the first to the second. Two of them are
+      live and I built both alone: a B2B platform that moves goods from Indian factories
+      to warehouses abroad, and an index of <b>1,000+ AI tools</b> mapped across 22 MBA
+      subjects.
+    </p>
+    <div class="facts rise d3">
+      <div><b>Hyderabad, India</b>On-site, hybrid or remote</div>
+      <div><b>Immediate</b>Notice period</div>
+      <div><b>Next.js · React · MySQL</b>Core stack</div>
+      <div><b>B.Tech, Computer Science</b>2019–2023</div>
+    </div>
+  </div>
+</header>
+
+<section class="plate sec" id="work">
+  <div class="shell">
+    <div class="kicker">Live product, built alone</div>
+
+    <div class="phead">
+      <div>
+        <h3>IndiaUnbox</h3>
+        <div class="what">End-to-end sourcing from India — RFQ to doorstep</div>
+      </div>
+      <a class="visit" href="https://indiaunbox.com" target="_blank" rel="noopener" style="margin-top:0">Open indiaunbox.com</a>
+    </div>
+
+    <a class="frame" href="https://indiaunbox.com" target="_blank" rel="noopener" style="display:block">
+      <div class="chrome"><i></i><i></i><i></i><span>indiaunbox.com</span></div>
+      <img src="indiaunbox.jpg" alt="IndiaUnbox homepage showing a live sourcing order moving through verification stages" width="1536" height="674" loading="lazy">
+    </a>
+
+    <div class="pbody">
+      <div>
+        <p class="body" style="margin-top:0">
+          A buyer abroad describes a product. IndiaUnbox finds and verifies Indian
+          manufacturers, then manages sampling, factory audits, production, inspection,
+          compliance and delivery — anywhere from EXW to DDP.
+        </p>
+        <p class="body">
+          The hard part is not the catalogue, it is <b>trust and state</b>. Every order
+          moves through ten stages, each one something a buyer can check, and the whole
+          pipeline has to stay legible to someone sitting in London who cannot visit
+          the factory.
+        </p>
+        <div class="tags">
+          <span class="tag">Next.js</span><span class="tag">React</span>
+          <span class="tag">MySQL</span><span class="tag">API routes</span>
+          <span class="tag">Auth</span><span class="tag">SEO</span>
+        </div>
+      </div>
+      <ul class="specs" style="margin-top:0">
+        <li><span>Pipeline</span><span>10 tracked stages, brief to delivery</span></li>
+        <li><span>Verification</span><span>Human check on every supplier, NDA on every brief</span></li>
+        <li><span>Quality</span><span>AQL 2.5 / 4.0 pre-shipment inspection</span></li>
+        <li><span>Also built</span><span>Marketplace, pricing, buyer dashboard, AI sourcing assistant</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="shell">
+    <div class="kicker">Live product, built alone</div>
+
+    <div class="phead">
+      <div>
+        <h3>SkilledMBA</h3>
+        <div class="what">An index of AI tools for the MBA community</div>
+      </div>
+      <a class="visit" href="https://skilledmba.com" target="_blank" rel="noopener" style="margin-top:0">Open skilledmba.com</a>
+    </div>
+
+    <a class="frame" href="https://skilledmba.com" target="_blank" rel="noopener" style="display:block">
+      <div class="chrome"><i></i><i></i><i></i><span>skilledmba.com</span></div>
+      <img src="skilledmba.jpg" alt="SkilledMBA homepage showing search and subject filters over a catalogue of AI tools" width="1536" height="674" loading="lazy">
+    </a>
+
+    <div class="pbody">
+      <div>
+        <p class="body" style="margin-top:0">
+          There are more AI tools than anyone can evaluate. SkilledMBA curates them and
+          maps each one to the MBA subjects, skills and roles it actually serves, so a
+          finance student and an HR lead arrive at different, correct answers.
+        </p>
+        <p class="body">
+          The work I am most pleased with is the <b>taxonomy</b>. The categories are
+          built around how someone searches — by subject, by role, by skill — rather
+          than how tools describe themselves. Routing and schema both follow from that,
+          which is what keeps a thousand entries navigable instead of a long list.
+        </p>
+        <div class="tags">
+          <span class="tag">Next.js</span><span class="tag">React</span>
+          <span class="tag">MySQL</span><span class="tag">Search</span>
+          <span class="tag">Auth</span><span class="tag">SEO</span>
+        </div>
+      </div>
+      <ul class="specs" style="margin-top:0">
+        <li><span>Catalogue</span><span>1,000+ tools, 22 MBA subjects, updated weekly</span></li>
+        <li><span>Finding</span><span>Search plus subject, role and skill filters</span></li>
+        <li><span>Accounts</span><span>Membership, auth, corporate plans</span></li>
+        <li><span>Also built</span><span>Blog, category pages, SEO structure</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="shell">
+    <div class="nums">
+      <div class="num"><b>2</b><span>Products designed, built and shipped solo</span></div>
+      <div class="num"><b>1,000+</b><span>Tools catalogued and mapped on SkilledMBA</span></div>
+      <div class="num"><b>10</b><span>Tracked order stages on IndiaUnbox</span></div>
+      <div class="num"><b>2 yrs</b><span>Data research before that, at Collegedunia</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="plate sec" id="experience">
+  <div class="shell">
+    <div class="kicker">Experience</div>
+    <h2 style="max-width:19ch;margin-bottom:38px">I came to building products through data.</h2>
+
+    <div class="role">
+      <div class="yr">Jul 2026 — now</div>
+      <div>
+        <h4>Independent web developer</h4>
+        <div class="org">Self-employed · Hyderabad</div>
+        <p>Designing, building and shipping products end to end. IndiaUnbox and SkilledMBA both came out of this work — architecture, data model, front end, API layer, auth, SEO and deployment on each.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="yr">Dec 2024 — Jul 2026</div>
+      <div>
+        <h4>Data researcher</h4>
+        <div class="org">Collegedunia</div>
+        <p>Sourced, cleaned and validated data across many sources and turned it into reports content and product teams acted on. Two years of being responsible for whether a number was right — it is why I design schemas the way I do.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="yr">Aug 2024 — Dec 2024</div>
+      <div>
+        <h4>Operations executive</h4>
+        <div class="org">Startek India</div>
+        <p>Process execution and reporting in a high-volume operations environment.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="yr">Sep 2020 — Jul 2024</div>
+      <div>
+        <h4>Research intern</h4>
+        <div class="org">VSAT Analytics</div>
+        <p>Research and analysis projects alongside the degree.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plate sec" style="padding-top:0">
+  <div class="shell">
+    <div class="kicker">What I work in</div>
+    <div class="cols">
+      <div class="col">
+        <h5>Front end</h5>
+        <p>Next.js<br>React<br>JavaScript<br>HTML, CSS, responsive UI</p>
+      </div>
+      <div class="col">
+        <h5>Back end and data</h5>
+        <p>Node.js via Next.js API routes<br>MySQL, schema design<br>SQL<br>Python</p>
+      </div>
+      <div class="col">
+        <h5>Shipping</h5>
+        <p>Git<br>Deployment<br>SEO<br>Core Web Vitals</p>
+      </div>
+    </div>
+    <p class="plainly">
+      <b>Plainly:</b> both products are JavaScript rather than TypeScript, and I have not
+      worked with AWS. I am picking up TypeScript now. I would rather you knew that here
+      than find it out in an interview.
+    </p>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="shell">
+    <div class="kicker">Get in touch</div>
+    <h2 style="max-width:18ch">Hiring for front-end, full-stack or data?</h2>
+    <p class="lead">
+      I am available immediately, in Hyderabad, elsewhere in India, or remote.
+      Both codebases are live — happy to walk you through either one.
+    </p>
+    <a class="mailto" href="mailto:dadymom91@gmail.com">dadymom91@gmail.com</a>
+    <div class="elsewhere">
+      <a href="https://www.linkedin.com/in/vineeth-rao-madasu-bb46651a5" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://indiaunbox.com" target="_blank" rel="noopener">indiaunbox.com</a>
+      <a href="https://skilledmba.com" target="_blank" rel="noopener">skilledmba.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="shell">
+    <span>Vineeth Rao Madasu — Hyderabad, India</span>
+    <span id="yr">2026</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
